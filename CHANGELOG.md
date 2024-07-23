@@ -1,4 +1,8 @@
-#  (2024-07-23)
+# [](https://github.com/afforai/citation-js/compare/v0.7.15...v) (2024-07-23)
+
+
+
+## [0.7.15](https://github.com/afforai/citation-js/compare/88aabc9202d7d4f5553dd3c21e5ff1fc64d6541a...v0.7.15) (2024-07-23)
 
 
 ### Bug Fixes
