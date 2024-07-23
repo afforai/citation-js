@@ -119,10 +119,7 @@ const ja01577a030 = {
       URL: 'https://pubs.acs.org/doi/abs/10.1021/ja01577a030'
     }
   },
-  ISSN: [
-    '0002-7863',
-    '1520-5126'
-  ],
+  ISSN: '0002-7863',
   subject: [
     'Colloid and Surface Chemistry',
     'Biochemistry',

@@ -29,6 +29,15 @@ function parseDoiJson (data) {
     res.genre = 'Doctoral dissertation'
   }
 
+  // Fix ISSN and ISBN back to a single string per the CSl-JSON standard
+  const idFields = ['ISSN', 'ISBN']
+  idFields.forEach(field => {
+    const value = data[field]
+    if (value && Array.isArray(value)) {
+      res[field] = value.find(i => typeof i === 'string')
+    }
+  })
+
   return Object.assign({}, data, res)
 }
 
