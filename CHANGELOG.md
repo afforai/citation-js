@@ -1,4 +1,8 @@
-# [](https://github.com/afforai/citation-js/compare/v0.7.15...v) (2024-07-23)
+# [](https://github.com/afforai/citation-js/compare/v0.7.16...v) (2024-07-23)
+
+
+
+## [0.7.16](https://github.com/afforai/citation-js/compare/v0.7.15...v0.7.16) (2024-07-23)
 
 
 

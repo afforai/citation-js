@@ -1,6 +1,6 @@
 {
   "name": "@afforai/citation-js-plugin-wikidata",
-  "version": "0.7.16",
+  "version": "0.7.17",
   "description": "Plugin for Wikidata for Citation.js",
   "keywords": [
     "citation-js",

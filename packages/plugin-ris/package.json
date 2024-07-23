@@ -1,6 +1,6 @@
 {
   "name": "@afforai/citation-js-plugin-ris",
-  "version": "0.7.16",
+  "version": "0.7.17",
   "description": "Plugin for RIS formats for Citation.js",
   "keywords": [
     "citation-js",

@@ -1,6 +1,6 @@
 {
   "name": "@afforai/citation-js-plugin-url",
-  "version": "0.7.16",
+  "version": "0.7.17",
   "description": "Citation.js plugin for automatically fetching URLs.",
   "keywords": [
     "citation-js"

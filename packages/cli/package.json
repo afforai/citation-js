@@ -1,6 +1,6 @@
 {
   "name": "@afforai/citation-js-cli",
-  "version": "0.7.16",
+  "version": "0.7.17",
   "description": "CLI for Citation.js",
   "keywords": [
     "citation-js",
