@@ -16,11 +16,11 @@
   "homepage": "https://citation.js.org/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/citation-js/citation-js.git",
+    "url": "git+https://github.com/afforai/citation-js.git",
     "directory": "packages/plugin-url"
   },
   "bugs": {
-    "url": "https://github.com/citation-js/citation-js/issues"
+    "url": "https://github.com/afforai/citation-js/issues"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -37,5 +37,8 @@
   },
   "peerDependencies": {
     "@citation-js/core": "^0.7.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

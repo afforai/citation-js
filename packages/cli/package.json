@@ -20,11 +20,11 @@
   "homepage": "https://citation.js.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/citation-js/citation-js.git",
+    "url": "https://github.com/afforai/citation-js.git",
     "directory": "packages/cli"
   },
   "bugs": {
-    "url": "https://github.com/citation-js/citation-js/issues"
+    "url": "https://github.com/afforai/citation-js/issues"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -44,5 +44,8 @@
     "@citation-js/plugin-ris": "^0.7.15",
     "@citation-js/plugin-wikidata": "^0.7.15",
     "commander": "^11.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

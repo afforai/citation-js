@@ -38,5 +38,8 @@
   },
   "standard": {
     "parser": "@babel/eslint-parser"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
