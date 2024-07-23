@@ -26,3 +26,6 @@ coverage.lcov
 
 # not really needed, is it?
 .directory
+
+# publishing
+.npmrc
