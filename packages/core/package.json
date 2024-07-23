@@ -1,5 +1,5 @@
 {
-  "name": "@citation-js/core",
+  "name": "@afforai/citation-js-core",
   "version": "0.7.16",
   "description": "Convert different bibliographic metadata sources",
   "keywords": [

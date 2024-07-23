@@ -1,5 +1,5 @@
 {
-  "name": "@citation-js/plugin-doi",
+  "name": "@afforai/citation-js-plugin-doi",
   "version": "0.7.16",
   "description": "Plugin for DOI input for Citation.js",
   "keywords": [

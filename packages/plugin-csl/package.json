@@ -1,5 +1,5 @@
 {
-  "name": "@citation-js/plugin-csl",
+  "name": "@afforai/citation-js-plugin-csl",
   "version": "0.7.16",
   "description": "Plugin for CSL output for Citation.js",
   "keywords": [

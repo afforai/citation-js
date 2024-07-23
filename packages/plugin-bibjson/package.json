@@ -1,5 +1,5 @@
 {
-  "name": "@citation-js/plugin-bibjson",
+  "name": "@afforai/citation-js-plugin-bibjson",
   "version": "0.7.16",
   "description": "Plugin for BibJSON formats for Citation.js",
   "keywords": [
