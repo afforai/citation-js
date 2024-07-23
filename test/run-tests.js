@@ -11,7 +11,7 @@ const test = spawn('lerna', [
   '--no-bail',
   '--stream',
   '--ignore',
-  '*/cli',
+  '*/citation-js-cli',
   ...lernaArgs,
   '--',
   '--',
