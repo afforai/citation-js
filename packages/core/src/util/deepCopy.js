@@ -3,7 +3,7 @@
  *
  * @access protected
  * @method deepCopy
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
  * @param {Object} obj - Input object
  * @param {Set} [seen]

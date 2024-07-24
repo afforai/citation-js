@@ -3,12 +3,12 @@
  *
  * @access protected
  * @method applyGraph
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
- * @param {module:@citation-js/core~CSL} entry
+ * @param {module:@afforai/citation-js-core~CSL} entry
  * @param {Array<Object>} graph
  *
- * @return {module:@citation-js/core~CSL} entry
+ * @return {module:@afforai/citation-js-core~CSL} entry
  */
 export function applyGraph (entry, graph) {
   if (entry._graph) {
@@ -27,11 +27,11 @@ export function applyGraph (entry, graph) {
  *
  * @access protected
  * @method removeGraph
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
- * @param {module:@citation-js/core~CSL} entry
+ * @param {module:@afforai/citation-js-core~CSL} entry
  *
- * @return {module:@citation-js/core~CSL} entry
+ * @return {module:@afforai/citation-js-core~CSL} entry
  */
 export function removeGraph (entry) {
   delete entry._graph

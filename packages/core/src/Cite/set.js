@@ -4,13 +4,13 @@ import fetchId from '../util/fetchId.js'
 /**
  * Add an object to the array of objects
  *
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
- * @param {module:@citation-js/core~InputData} data - The data to add to your object
- * @param {module:@citation-js/core~InputOptions} [options] - Options
+ * @param {module:@afforai/citation-js-core~InputData} data - The data to add to your object
+ * @param {module:@afforai/citation-js-core~InputOptions} [options] - Options
  * @param {Boolean} [log=false] - Show this call in the log
  *
- * @return {module:@citation-js/core.Cite} The updated parent object
+ * @return {module:@afforai/citation-js-core.Cite} The updated parent object
  */
 function add (data, options = {}, log = false) {
   if (options === true || log === true) {
@@ -31,13 +31,13 @@ function add (data, options = {}, log = false) {
 /**
  * Add an object to the array of objects
  *
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
- * @param {module:@citation-js/core~InputData} data - The data to add to your object
- * @param {module:@citation-js/core~InputOptions} [options] - Options
+ * @param {module:@afforai/citation-js-core~InputData} data - The data to add to your object
+ * @param {module:@afforai/citation-js-core~InputOptions} [options] - Options
  * @param {Boolean} [log=false] - Show this call in the log
  *
- * @return {Promise<module:@citation-js/core.Cite>} The updated parent object
+ * @return {Promise<module:@afforai/citation-js-core.Cite>} The updated parent object
  */
 async function addAsync (data, options = {}, log = false) {
   if (options === true || log === true) {
@@ -58,13 +58,13 @@ async function addAsync (data, options = {}, log = false) {
 /**
  * Recreate a `Cite` object with almost any kind of data, and manipulate it with its default methods.
  *
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
- * @param {module:@citation-js/core~InputData} data - Replacement data
- * @param {module:@citation-js/core~InputOptions} [options] - Options
+ * @param {module:@afforai/citation-js-core~InputData} data - Replacement data
+ * @param {module:@afforai/citation-js-core~InputOptions} [options] - Options
  * @param {Boolean} [log=false] - Show this call in the log
  *
- * @return {module:@citation-js/core.Cite} The updated parent object
+ * @return {module:@afforai/citation-js-core.Cite} The updated parent object
  */
 function set (data, options = {}, log = false) {
   if (options === true || log === true) {
@@ -78,13 +78,13 @@ function set (data, options = {}, log = false) {
 /**
  * Recreate a `Cite` object with almost any kind of data, and manipulate it with its default methods.
  *
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
- * @param {module:@citation-js/core~InputData} data - Replacement data
- * @param {module:@citation-js/core~InputOptions} [options] - Options
+ * @param {module:@afforai/citation-js-core~InputData} data - Replacement data
+ * @param {module:@afforai/citation-js-core~InputOptions} [options] - Options
  * @param {Boolean} [log=false] - Show this call in the log
  *
- * @return {Promise<module:@citation-js/core.Cite>} The updated parent object
+ * @return {Promise<module:@afforai/citation-js-core.Cite>} The updated parent object
  */
 async function setAsync (data, options = {}, log = false) {
   if (options === true || log === true) {
@@ -98,11 +98,11 @@ async function setAsync (data, options = {}, log = false) {
 /**
  * Reset a `Cite` object.
  *
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
  * @param {Boolean} [log=false] - Show this call in the log
  *
- * @return {module:@citation-js/core.Cite} The updated, empty parent object (except the log, the log lives)
+ * @return {module:@afforai/citation-js-core.Cite} The updated, empty parent object (except the log, the log lives)
  */
 function reset (log) {
   if (log) {

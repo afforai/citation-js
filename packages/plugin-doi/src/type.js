@@ -22,7 +22,7 @@ const doiTypes = {
  *
  * @access protected
  * @method parse
- * @memberof module:@citation-js/plugin-doi.parsers.type
+ * @memberof module:@afforai/citation-js-plugin-doi.parsers.type
  *
  * @param {String} value - Input Crossref type
  * @param {Object} data - Full Crossref record

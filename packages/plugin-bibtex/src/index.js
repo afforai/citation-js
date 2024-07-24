@@ -1,7 +1,7 @@
 /**
  * ## Formats
  *
- * For a full list, check out {@link module:@citation-js/plugin.bibtex.formats}.
+ * For a full list, check out {@link module:@afforai/citation-js-plugin.bibtex.formats}.
  *
  * ### BibTeX
  *
@@ -26,12 +26,12 @@
  *
  * ## Configuration
  *
- * Check out {@link module:@citation-js/plugin-bibtex.config}.
+ * Check out {@link module:@afforai/citation-js-plugin-bibtex.config}.
  *
- * @module module:@citation-js/plugin-bibtex
+ * @module module:@afforai/citation-js-plugin-bibtex
  */
 
-import { plugins } from '@citation-js/core'
+import { plugins } from '@afforai/citation-js-core'
 
 import { ref, formats as input } from './input/index.js'
 import config from './config.js'

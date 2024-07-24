@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 import prepareEngine from './engines.js'
 import { getPrefixedEntry } from './attr.js'
 
@@ -80,8 +80,8 @@ const getAffix = (source, affix) => typeof affix === 'function' ? affix(source) 
  * // ]
  * ```
  *
- * @memberof module:@citation-js/plugin-csl.output
- * @implements module:@citation-js/core.plugins.output~formatter
+ * @memberof module:@afforai/citation-js-plugin-csl.output
+ * @implements module:@afforai/citation-js-core.plugins.output~formatter
  * @method bibliography
  *
  * @param {Array<CSL>} data

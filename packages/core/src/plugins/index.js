@@ -1,6 +1,6 @@
 /**
  * @namespace plugins
- * @memberof module:@citation-js/core
+ * @memberof module:@afforai/citation-js-core
  */
 
 import * as input from './input/index.js'
@@ -20,9 +20,9 @@ const indices = {}
 /**
  * @access public
  * @method add
- * @memberof module:@citation-js/core.plugins
- * @param {module:@citation-js/core.plugins~pluginRef} ref - plugin reference/name
- * @param {module:@citation-js/core.plugins~plugins} [plugins={}]
+ * @memberof module:@afforai/citation-js-core.plugins
+ * @param {module:@afforai/citation-js-core.plugins~pluginRef} ref - plugin reference/name
+ * @param {module:@afforai/citation-js-core.plugins~plugins} [plugins={}]
  */
 export function add (ref, plugins = {}) {
   const mainIndex = indices[ref] = {}
@@ -49,8 +49,8 @@ export function add (ref, plugins = {}) {
 /**
  * @access public
  * @method remove
- * @memberof module:@citation-js/core.plugins
- * @param {module:@citation-js/core.plugins~pluginRef} ref - plugin reference/name
+ * @memberof module:@afforai/citation-js-core.plugins
+ * @param {module:@afforai/citation-js-core.plugins~pluginRef} ref - plugin reference/name
  */
 export function remove (ref) {
   const mainIndex = indices[ref]
@@ -69,8 +69,8 @@ export function remove (ref) {
 /**
  * @access public
  * @method has
- * @memberof module:@citation-js/core.plugins
- * @param {module:@citation-js/core.plugins~pluginRef} ref - plugin reference/name
+ * @memberof module:@afforai/citation-js-core.plugins
+ * @param {module:@afforai/citation-js-core.plugins~pluginRef} ref - plugin reference/name
  * @returns {Boolean} plugin is registered
  */
 export function has (ref) {
@@ -80,22 +80,22 @@ export function has (ref) {
 /**
  * @access public
  * @method list
- * @memberof module:@citation-js/core.plugins
- * @returns {Array<module:@citation-js/core.plugins~pluginRef>} list of registered plugins
+ * @memberof module:@afforai/citation-js-core.plugins
+ * @returns {Array<module:@afforai/citation-js-core.plugins~pluginRef>} list of registered plugins
  */
 export function list () {
   return Object.keys(indices)
 }
 
 /**
- * @typedef {String} module:@citation-js/core.plugins~pluginRef
+ * @typedef {String} module:@afforai/citation-js-core.plugins~pluginRef
  */
 
 /**
- * @typedef {Object} module:@citation-js/core.plugins~plugins
- * @property {Object<module:@citation-js/core.plugins.input~format,module:@citation-js/core.plugins.input~parsers>} input
- * @property {Object<module:@citation-js/core.plugins.output~formatterName,module:@citation-js/core.plugins.output~formatter>} output
- * @property {Object<module:@citation-js/core.plugins.dict~dictName,module:@citation-js/core.plugins.dict~dict>} dict
+ * @typedef {Object} module:@afforai/citation-js-core.plugins~plugins
+ * @property {Object<module:@afforai/citation-js-core.plugins.input~format,module:@afforai/citation-js-core.plugins.input~parsers>} input
+ * @property {Object<module:@afforai/citation-js-core.plugins.output~formatterName,module:@afforai/citation-js-core.plugins.output~formatter>} output
+ * @property {Object<module:@afforai/citation-js-core.plugins.dict~dictName,module:@afforai/citation-js-core.plugins.dict~dict>} dict
  * @property {Object} config
  */
 

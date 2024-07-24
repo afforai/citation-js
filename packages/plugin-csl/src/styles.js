@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 
 /**
  * Object containing CSL templates
@@ -15,7 +15,7 @@ import defaultTemplates from './styles.json'
 
 /**
  * @access private
- * @type module:@citation-js/core.util.Register
+ * @type module:@afforai/citation-js-core.util.Register
  * @member
  */
 const templates = new util.Register(defaultTemplates)

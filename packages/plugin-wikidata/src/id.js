@@ -6,7 +6,7 @@ import config from './config.json'
  *
  * @access protected
  * @method parse
- * @memberof module:@citation-js/plugin-wikidata.parsers.id
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.id
  *
  * @param {String|Array<String>} data - Wikidata IDs
  * @param {Array<String>} [langs]

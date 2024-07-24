@@ -12,11 +12,11 @@ const unregExts = {}
  * Hard-coded, for reasons
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core~InputData} input
- * @param {module:@citation-js/core.plugins.input~dataType} dataType
- * @return {module:@citation-js/core.plugins.input~format} native format
+ * @param {module:@afforai/citation-js-core~InputData} input
+ * @param {module:@afforai/citation-js-core.plugins.input~dataType} dataType
+ * @return {module:@afforai/citation-js-core.plugins.input~format} native format
  */
 function parseNativeTypes (input, dataType) {
   switch (dataType) {
@@ -39,12 +39,12 @@ function parseNativeTypes (input, dataType) {
 
 /**
  * @access private
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {Array<module:@citation-js/core.plugins.input~format>} [typeList=[]]
- * @param {module:@citation-js/core~InputData} data
+ * @param {Array<module:@afforai/citation-js-core.plugins.input~format>} [typeList=[]]
+ * @param {module:@afforai/citation-js-core~InputData} data
  *
- * @return {module:@citation-js/core.plugins.input~format} native format
+ * @return {module:@afforai/citation-js-core.plugins.input~format} native format
  */
 function matchType (typeList = [], data) {
   for (const type of typeList) {
@@ -57,11 +57,11 @@ function matchType (typeList = [], data) {
 /**
  * @access public
  * @method type
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core~InputData} input
+ * @param {module:@afforai/citation-js-core~InputData} input
  *
- * @return {module:@citation-js/core.plugins.input~format} type
+ * @return {module:@afforai/citation-js-core.plugins.input~format} type
  */
 export function type (input) {
   const dataType = dataTypeOf(input)
@@ -83,10 +83,10 @@ export function type (input) {
 /**
  * @access public
  * @method addTypeParser
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core.plugins.input~format} format
- * @param {module:@citation-js/core.plugins.input.util.TypeParser} typeParser
+ * @param {module:@afforai/citation-js-core.plugins.input~format} format
+ * @param {module:@afforai/citation-js-core.plugins.input.util.TypeParser} typeParser
  */
 export function addTypeParser (format, { dataType, predicate, extends: extend }) {
   // 1. check if any subclass formats are waiting for this format
@@ -127,9 +127,9 @@ export function addTypeParser (format, { dataType, predicate, extends: extend })
 /**
  * @access public
  * @method hasTypeParser
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core.plugins.input~format} type
+ * @param {module:@afforai/citation-js-core.plugins.input~format} type
  *
  * @return {Boolean} type parser is registered
  */
@@ -140,9 +140,9 @@ export function hasTypeParser (type) {
 /**
  * @access public
  * @method removeTypeParser
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core.plugins.input~format} type
+ * @param {module:@afforai/citation-js-core.plugins.input~format} type
  */
 export function removeTypeParser (type) {
   delete types[type]
@@ -163,9 +163,9 @@ export function removeTypeParser (type) {
 /**
  * @access public
  * @method listTypeParser
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @return {Array<module:@citation-js/core.plugins.input~format>} list of registered type parsers
+ * @return {Array<module:@afforai/citation-js-core.plugins.input~format>} list of registered type parsers
  */
 export function listTypeParser () {
   return Object.keys(types)
@@ -174,7 +174,7 @@ export function listTypeParser () {
 /**
  * @access public
  * @method treeTypeParser
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
  * @return {Object} tree structure
  */
@@ -195,7 +195,7 @@ export function treeTypeParser () {
  *
  * @access public
  * @method typeMatcher
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  * @type {RegExp}
  */
 export const typeMatcher = /^(?:@(.+?))(?:\/(?:(.+?)\+)?(?:(.+)))?$/

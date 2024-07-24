@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 import config from '../config.js'
 
 const stopWords = new Set([

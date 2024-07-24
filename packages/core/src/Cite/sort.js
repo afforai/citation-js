@@ -2,9 +2,9 @@ import { getLabel } from '../plugin-common/output/label.js'
 import { format as getName } from '@citation-js/name'
 
 /**
- * @callback module:@citation-js/core.Cite#sort~sort
- * @param {module:@citation-js/core~CSL} a - element a
- * @param {module:@citation-js/core~CSL} b - element b
+ * @callback module:@afforai/citation-js-core.Cite#sort~sort
+ * @param {module:@afforai/citation-js-core~CSL} a - element a
+ * @param {module:@afforai/citation-js-core~CSL} b - element b
  * @return {Number} positive for a > b, negative for b > a, zero for a = b
  */
 
@@ -14,7 +14,7 @@ import { format as getName } from '@citation-js/name'
  * @access private
  * @method getComparisonValue
  *
- * @param {module:@citation-js/core~CSL} obj - obj
+ * @param {module:@afforai/citation-js-core~CSL} obj - obj
  * @param {String} prop - The prop in question
  * @param {Boolean} label - Prop is label
  *
@@ -52,8 +52,8 @@ function getComparisonValue (obj, prop, label = prop === 'label') {
  * @access private
  * @method compareProp
  *
- * @param {module:@citation-js/core~CSL} entryA
- * @param {module:@citation-js/core~CSL} entryB
+ * @param {module:@afforai/citation-js-core~CSL} entryA
+ * @param {module:@afforai/citation-js-core~CSL} entryB
  * @param {String} prop - The prop in question. Prepend ! to sort the other way around.
  * @param {Boolean} flip - Override flip
  *
@@ -75,7 +75,7 @@ function compareProp (entryA, entryB, prop, flip = /^!/.test(prop)) {
  *
  * @param {...String} props - How to sort
  *
- * @return {module:@citation-js/core.Cite#sort~sort} sorting callback
+ * @return {module:@afforai/citation-js-core.Cite#sort~sort} sorting callback
  */
 function getSortCallback (...props) {
   return (a, b) => {
@@ -93,12 +93,12 @@ function getSortCallback (...props) {
 /**
  * Sort the dataset
  *
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
- * @param {module:@citation-js/core.Cite#sort~sort|Array<String>} [method=[]] - How to sort
+ * @param {module:@afforai/citation-js-core.Cite#sort~sort|Array<String>} [method=[]] - How to sort
  * @param {Boolean} [log=false] - Show this call in the log
  *
- * @return {module:@citation-js/core.Cite} The updated parent object
+ * @return {module:@afforai/citation-js-core.Cite} The updated parent object
  */
 function sort (method = [], log) {
   if (log) {

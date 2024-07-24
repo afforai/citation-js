@@ -1,13 +1,13 @@
 import { type, typeMatcher } from './type.js'
 
 /**
- * @memberof module:@citation-js/core.plugins.input.util
- * @param {module:@citation-js/core.plugins.input~typeParser} data
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
+ * @param {module:@afforai/citation-js-core.plugins.input~typeParser} data
  */
 class TypeParser {
   /**
    * @access protected
-   * @type {Array<module:@citation-js/core.plugins.input~dataType>}
+   * @type {Array<module:@afforai/citation-js-core.plugins.input~dataType>}
    */
   validDataTypes = ['String', 'Array', 'SimpleObject', 'ComplexObject', 'Primitive']
 
@@ -107,7 +107,7 @@ class TypeParser {
 
   /**
    * @access protected
-   * @return {Array<module:@citation-js/core.plugins.input~predicate>}
+   * @return {Array<module:@afforai/citation-js-core.plugins.input~predicate>}
    */
   parseTokenList () {
     let tokenList = this.data.tokenList
@@ -131,7 +131,7 @@ class TypeParser {
 
   /**
    * @access protected
-   * @return {Array<module:@citation-js/core.plugins.input~predicate>}
+   * @return {Array<module:@afforai/citation-js-core.plugins.input~predicate>}
    */
   parsePropertyConstraint () {
     const constraints = [].concat(this.data.propertyConstraint || [])
@@ -151,7 +151,7 @@ class TypeParser {
 
   /**
    * @access protected
-   * @return {Array<module:@citation-js/core.plugins.input~predicate>}
+   * @return {Array<module:@afforai/citation-js-core.plugins.input~predicate>}
    */
   parseElementConstraint () {
     const constraint = this.data.elementConstraint
@@ -160,7 +160,7 @@ class TypeParser {
 
   /**
    * @access protected
-   * @return {Array<module:@citation-js/core.plugins.input~predicate>}
+   * @return {Array<module:@afforai/citation-js-core.plugins.input~predicate>}
    */
   parsePredicate () {
     if (this.data.predicate instanceof RegExp) {
@@ -174,7 +174,7 @@ class TypeParser {
 
   /**
    * @access protected
-   * @return {module:@citation-js/core.plugins.input~predicate}
+   * @return {module:@afforai/citation-js-core.plugins.input~predicate}
    */
   getCombinedPredicate () {
     const predicates = [
@@ -195,7 +195,7 @@ class TypeParser {
 
   /**
    * @access protected
-   * @return {module:@citation-js/core.plugins.input~dataType}
+   * @return {module:@afforai/citation-js-core.plugins.input~dataType}
    */
   getDataType () {
     if (this.data.dataType) {
@@ -216,21 +216,21 @@ class TypeParser {
   // ==========================================================================
 
   /**
-   * @type {module:@citation-js/core.plugins.input~dataType}
+   * @type {module:@afforai/citation-js-core.plugins.input~dataType}
    */
   get dataType () {
     return this.getDataType()
   }
 
   /**
-   * @type {module:@citation-js/core.plugins.input~predicate}
+   * @type {module:@afforai/citation-js-core.plugins.input~predicate}
    */
   get predicate () {
     return this.getCombinedPredicate()
   }
 
   /**
-   * @type {module:@citation-js/core.plugins.input~format}
+   * @type {module:@afforai/citation-js-core.plugins.input~format}
    */
   get extends () {
     return this.data.extends
@@ -238,8 +238,8 @@ class TypeParser {
 }
 
 /**
- * @memberof module:@citation-js/core.plugins.input.util
- * @param {module:@citation-js/core.plugins.input~dataParser|module:@citation-js/core.plugins.input~asyncDataParser} parser
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
+ * @param {module:@afforai/citation-js-core.plugins.input~dataParser|module:@afforai/citation-js-core.plugins.input~asyncDataParser} parser
  * @param {Object} options
  * @param {Boolean} [options.async=false]
  */
@@ -265,9 +265,9 @@ class DataParser {
 }
 
 /**
- * @memberof module:@citation-js/core.plugins.input.util
- * @param {module:@citation-js/core.plugins.input~format} format
- * @param {module:@citation-js/core.plugins.input~parsers} parsers
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
+ * @param {module:@afforai/citation-js-core.plugins.input~format} format
+ * @param {module:@afforai/citation-js-core.plugins.input~parsers} parsers
  */
 class FormatParser {
   constructor (format, parsers = {}) {

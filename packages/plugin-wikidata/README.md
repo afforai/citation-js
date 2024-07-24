@@ -1,22 +1,22 @@
-# @citation-js/plugin-wikidata
+# @afforai/citation-js-plugin-wikidata
 Plugin for Wikidata for Citation.js.
 
-[![NPM version](https://img.shields.io/npm/v/@citation-js/plugin-wikidata.svg)](https://npmjs.org/package/@citation-js/plugin-wikidata)
-[![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/plugin-wikidata.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-wikidata?minimal=true)
-![License](https://img.shields.io/npm/l/@citation-js/plugin-wikidata.svg)
-![Dependency status](https://img.shields.io/librariesio/release/npm/@citation-js/plugin-wikidata)
+[![NPM version](https://img.shields.io/npm/v/@afforai/citation-js-plugin-wikidata.svg)](https://npmjs.org/package/@afforai/citation-js-plugin-wikidata)
+[![NPM total downloads](https://img.shields.io/npm/dt/@afforai/citation-js-plugin-wikidata.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-wikidata?minimal=true)
+![License](https://img.shields.io/npm/l/@afforai/citation-js-plugin-wikidata.svg)
+![Dependency status](https://img.shields.io/librariesio/release/npm/@afforai/citation-js-plugin-wikidata)
 ---
 
 ## Install
 
-    npm install @citation-js/plugin-wikidata
+    npm install @afforai/citation-js-plugin-wikidata
 
 ## Usage
 
 Register by importing the package:
 
 ```js
-require('@citation-js/plugin-wikidata')
+require('@afforai/citation-js-plugin-wikidata')
 ```
 
 ## Formats
@@ -40,7 +40,7 @@ API responses (`@wikidata/object`) are also supported. Additionally, this plugin
 Input languages can be specified:
 
 ```js
-const {plugins} = require('@citation-js/core')
+const {plugins} = require('@afforai/citation-js-core')
 
 const config = plugins.config.get('@wikidata')
 

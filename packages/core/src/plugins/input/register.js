@@ -4,7 +4,7 @@ import { addDataParser, removeDataParser } from './data.js'
 
 /**
  * @access private
- * @type {Object<module:@citation-js/core.plugins.input~format, Object>}
+ * @type {Object<module:@afforai/citation-js-core.plugins.input~format, Object>}
  */
 const formats = {}
 
@@ -13,10 +13,10 @@ const formats = {}
  *
  * @access public
  * @method add
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core.plugins.input~format} format - input format name
- * @param {module:@citation-js/core.plugins.input~parsers} parsers - parsers
+ * @param {module:@afforai/citation-js-core.plugins.input~format} format - input format name
+ * @param {module:@afforai/citation-js-core.plugins.input~parsers} parsers - parsers
  *
  * @tutorial input_plugins
  */
@@ -47,9 +47,9 @@ export function add (format, parsers) {
 /**
  * @access public
  * @method get
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core.plugins.input~format} format - input format name
+ * @param {module:@afforai/citation-js-core.plugins.input~format} format - input format name
  * @returns {Object} index
  */
 export function get (format) {
@@ -59,9 +59,9 @@ export function get (format) {
 /**
  * @access public
  * @method remove
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core.plugins.input~format} format - input format name
+ * @param {module:@afforai/citation-js-core.plugins.input~format} format - input format name
  */
 export function remove (format) {
   const index = formats[format]
@@ -86,8 +86,8 @@ export function remove (format) {
 /**
  * @access public
  * @method has
- * @memberof module:@citation-js/core.plugins.input
- * @param {module:@citation-js/core.plugins.input~format} format - input format name
+ * @memberof module:@afforai/citation-js-core.plugins.input
+ * @param {module:@afforai/citation-js-core.plugins.input~format} format - input format name
  * @returns {Boolean} input format is registered
  */
 export function has (format) {
@@ -97,8 +97,8 @@ export function has (format) {
 /**
  * @access public
  * @method list
- * @memberof module:@citation-js/core.plugins.input
- * @returns {Array<module:@citation-js/core.plugins.input~format>} input format is registered
+ * @memberof module:@afforai/citation-js-core.plugins.input
+ * @returns {Array<module:@afforai/citation-js-core.plugins.input~format>} input format is registered
  */
 export function list () {
   return Object.keys(formats)

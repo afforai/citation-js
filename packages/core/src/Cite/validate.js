@@ -6,10 +6,10 @@ const wrapperTypes = ['string', 'function']
 /**
  * @access public
  * @method validateOutputOptions
- * @memberof module:@citation-js/core.Cite
+ * @memberof module:@afforai/citation-js-core.Cite
  *
  * @deprecated
- * @param {module:@citation-js/core~OutputOptions} - options
+ * @param {module:@afforai/citation-js-core~OutputOptions} - options
  *
  * @return {Boolean} true (if valid)
  * @throws {TypeError} Options not an object
@@ -50,9 +50,9 @@ export function validateOutputOptions (options) {
 /**
  * @access public
  * @method valdiateOptions
- * @memberof module:@citation-js/core.Cite
+ * @memberof module:@afforai/citation-js-core.Cite
  *
- * @param {module:@citation-js/core~InputOptions} - options
+ * @param {module:@afforai/citation-js-core~InputOptions} - options
  *
  * @return {Boolean} true (if valid)
  * @throws {TypeError} Options not an object

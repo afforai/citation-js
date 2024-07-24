@@ -18,13 +18,13 @@ function promisify (fn) {
   }
 }
 
-const { Cite, plugins, logger } = require('@citation-js/core')
-require('@citation-js/plugin-bibjson')
-require('@citation-js/plugin-bibtex')
-require('@citation-js/plugin-csl')
-require('@citation-js/plugin-doi')
-require('@citation-js/plugin-ris')
-require('@citation-js/plugin-wikidata')
+const { Cite, plugins, logger } = require('@afforai/citation-js-core')
+require('@afforai/citation-js-plugin-bibjson')
+require('@afforai/citation-js-plugin-bibtex')
+require('@afforai/citation-js-plugin-csl')
+require('@afforai/citation-js-plugin-doi')
+require('@afforai/citation-js-plugin-ris')
+require('@afforai/citation-js-plugin-wikidata')
 
 const program = require('commander')
 program
@@ -46,7 +46,7 @@ program
 
   .option('--log-level <level>', 'Log level: silent, error, warn, info, debug, http', 'warn')
 
-  .option('--plugins <names>', 'Plugin names (@citation-js/plugin-NAME); bibjson, bibtex, csl, doi, ris & wikidata are preloaded',
+  .option('--plugins <names>', 'Plugin names (@afforai/citation-js-plugin-NAME); bibjson, bibtex, csl, doi, ris & wikidata are preloaded',
     names => names.split(','), [])
   .option('--plugin-config <config>', '@plugin.property.path=value;...',
     splitOptions, [])
@@ -80,9 +80,9 @@ async function main (program) {
 
   for (const plugin of options.plugins) {
     try {
-      require(`@citation-js/plugin-${plugin}`)
+      require(`@afforai/citation-js-plugin-${plugin}`)
     } catch (e) {
-      logger.error(`Could not load plugin "@citation-js/plugin-${plugin}"`)
+      logger.error(`Could not load plugin "@afforai/citation-js-plugin-${plugin}"`)
     }
   }
 

@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 
 /**
  * Object containing CSL locales
@@ -15,7 +15,7 @@ import defaultLocales from './locales.json'
 
 /**
  * @access private
- * @type module:@citation-js/core.util.Register
+ * @type module:@afforai/citation-js-core.util.Register
  * @member
  */
 const locales = new util.Register(defaultLocales)

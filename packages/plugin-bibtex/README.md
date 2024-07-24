@@ -1,22 +1,22 @@
-# @citation-js/plugin-bibtex
+# @afforai/citation-js-plugin-bibtex
 Plugin for BibTeX formats for Citation.js.
 
-[![NPM version](https://img.shields.io/npm/v/@citation-js/plugin-bibtex.svg)](https://npmjs.org/package/@citation-js/plugin-bibtex)
-[![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/plugin-bibtex.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-bibtex?minimal=true)
-![License](https://img.shields.io/npm/l/@citation-js/plugin-bibtex.svg)
-![Dependency status](https://img.shields.io/librariesio/release/npm/@citation-js/plugin-bibtex)
+[![NPM version](https://img.shields.io/npm/v/@afforai/citation-js-plugin-bibtex.svg)](https://npmjs.org/package/@afforai/citation-js-plugin-bibtex)
+[![NPM total downloads](https://img.shields.io/npm/dt/@afforai/citation-js-plugin-bibtex.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-bibtex?minimal=true)
+![License](https://img.shields.io/npm/l/@afforai/citation-js-plugin-bibtex.svg)
+![Dependency status](https://img.shields.io/librariesio/release/npm/@afforai/citation-js-plugin-bibtex)
 ---
 
 ## Install
 
-    npm install @citation-js/plugin-bibtex
+    npm install @afforai/citation-js-plugin-bibtex
 
 ## Usage
 
 Register by importing the package:
 
 ```js
-require('@citation-js/plugin-bibtex')
+require('@afforai/citation-js-plugin-bibtex')
 ```
 
 ## Formats
@@ -49,7 +49,7 @@ dictionary support.
 Configuration can be accessed like the following:
 
 ```js
-const { plugins } = require('@citation-js/core')
+const { plugins } = require('@afforai/citation-js-core')
 const config = plugins.config.get('@bibtex')
 ```
 

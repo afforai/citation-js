@@ -3,7 +3,7 @@ import bibtex from './mapping/bibtexTypes.json'
 import * as constants from './input/constants.js'
 
 /**
- * @memberof module:@citation-js/plugin-bibtex
+ * @memberof module:@afforai/citation-js-plugin-bibtex
  * @namespace config
  */
 export default {
@@ -132,7 +132,7 @@ export default {
    * config.constants.defaultStrings.larsgw = "Willighagen, Lars G"
    * ```
    *
-   * @memberof module:@citation-js/plugin-bibtex.config
+   * @memberof module:@afforai/citation-js-plugin-bibtex.config
    * @var {Object} constants
    * @property {Object} required
    * @property {Object<String, Array<String|Array<String>>>} required.biblatex
@@ -165,7 +165,7 @@ export default {
    * config.types.biblatex.target['paper-conference'] = 'inproceedings'
    * ```
    *
-   * @memberof module:@citation-js/plugin-bibtex.config
+   * @memberof module:@afforai/citation-js-plugin-bibtex.config
    * @var {Object} types
    * @property {Object} biblatex
    * @property {Object<String, String>} biblatex.source - BibLaTeX to CSL
@@ -177,7 +177,7 @@ export default {
   types: { biblatex, bibtex },
 
   /**
-   * @memberof module:@citation-js/plugin-bibtex.config
+   * @memberof module:@afforai/citation-js-plugin-bibtex.config
    * @var {Object} parse
    * @property {Boolean} [strict=false] - When true, entries are checked for required fields.
    * @property {String} [sentenceCase='never'] - Convert titles to sentence case when parsing.
@@ -189,7 +189,7 @@ export default {
   },
 
   /**
-   * @memberof module:@citation-js/plugin-bibtex.config
+   * @memberof module:@afforai/citation-js-plugin-bibtex.config
    * @var {Object} format
    * @property {Boolean} [format.useIdAsLabel=false] - Use the entry ID as the label instead of generating one.
    * @property {Boolean} [format.checkLabel=true] - Remove unsafe characters from the provided label (or ID).
@@ -202,7 +202,7 @@ export default {
   },
 
   /**
-   * @memberof module:@citation-js/plugin-bibtex.config
+   * @memberof module:@afforai/citation-js-plugin-bibtex.config
    * @var {Object} biber
    * @property {Boolean} [biber.annotationMarker='+an'] - Signifier that a field is a data annotation.
    * @property {Boolean} [biber.namedAnnotationMarker=':'] - Signifier that a data annotation is named.

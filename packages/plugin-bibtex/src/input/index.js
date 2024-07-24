@@ -3,25 +3,25 @@ import { parse as parseBibtxt } from './bibtxt.js'
 import { parse as parseEntries, parseBibtex } from './entries.js'
 
 /**
- * @constant {module:@citation-js/core.plugins~pluginRef} ref
- * @memberof module:@citation-js/plugin-bibtex
+ * @constant {module:@afforai/citation-js-core.plugins~pluginRef} ref
+ * @memberof module:@afforai/citation-js-plugin-bibtex
  * @default '@bibtex'
  */
 export const ref = '@bibtex'
 
 /**
  * @namespace formats
- * @type Object<module:@citation-js/core.plugins.input~format,module:@citation-js/core.plugins.input~parsers>
- * @memberof module:@citation-js/plugin-bibtex
+ * @type Object<module:@afforai/citation-js-core.plugins.input~format,module:@afforai/citation-js-core.plugins.input~parsers>
+ * @memberof module:@afforai/citation-js-plugin-bibtex
  */
 export const formats = {
   /**
    * BibLaTeX file.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@biblatex/text': {
     parse: parseFile,
@@ -42,10 +42,10 @@ export const formats = {
    * }
    * ```
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@biblatex/entry+object': {
     parse (input) { return parseEntries([input]) },
@@ -56,12 +56,12 @@ export const formats = {
   },
 
   /**
-   * Array of {@link module:@citation-js/plugin-bibtex.formats."@biblatex/entries+list"|BibLaTeX objects}.
+   * Array of {@link module:@afforai/citation-js-plugin-bibtex.formats."@biblatex/entries+list"|BibLaTeX objects}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@biblatex/entries+list': {
     parse: parseEntries,
@@ -71,10 +71,10 @@ export const formats = {
   /**
    * BibTeX file.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~format} outputs
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~format} outputs
    */
   '@bibtex/text': {
     parse: parseFile,
@@ -92,20 +92,20 @@ export const formats = {
    * }
    * ```
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
    */
   '@bibtex/entry+object': {
     parse (input) { return parseBibtex([input]) }
   },
 
   /**
-   * Array of {@link module:@citation-js/plugin-bibtex.formats."@bibtex/entries+list"|BibTeX objects}.
+   * Array of {@link module:@afforai/citation-js-plugin-bibtex.formats."@bibtex/entries+list"|BibTeX objects}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
    */
   '@bibtex/entries+list': {
     parse: parseBibtex
@@ -114,10 +114,10 @@ export const formats = {
   /**
    * Bib.TXT file.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-bibtex.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-bibtex.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@bibtxt/text': {
     parse: parseBibtxt,

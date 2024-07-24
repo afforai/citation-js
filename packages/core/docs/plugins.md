@@ -1,7 +1,7 @@
 To add plugins to Citation.js, use the following method:
 
 ```js
-const {plugins} = require('@citation-js/core')
+const {plugins} = require('@afforai/citation-js-core')
 
 plugins.add(ref, {
   input: {

@@ -1,4 +1,4 @@
-import { plugins } from '@citation-js/core'
+import { plugins } from '@afforai/citation-js-core'
 import { format as mapBiblatex, formatBibtex as mapBibtex } from './entries.js'
 import { format } from './bibtex.js'
 import { format as formatBibtxt } from './bibtxt.js'
@@ -20,39 +20,39 @@ const factory = function (mapper, formatter) {
 
 /**
  * @namespace output
- * @type Object<module:@citation-js/core.plugins.output~formatterName,module:@citation-js/core.plugins.output~formatter>
- * @memberof module:@citation-js/plugin-bibtex
+ * @type Object<module:@afforai/citation-js-core.plugins.output~formatterName,module:@afforai/citation-js-core.plugins.output~formatter>
+ * @memberof module:@afforai/citation-js-plugin-bibtex
  */
 export default {
   /**
    * @function
-   * @implements module:@citation-js/core.plugins.output~formatter
-   * @memberof module:@citation-js/plugin-bibtex.output
-   * @param {Array<module:@citation-js/core~CSL>} data
+   * @implements module:@afforai/citation-js-core.plugins.output~formatter
+   * @memberof module:@afforai/citation-js-plugin-bibtex.output
+   * @param {Array<module:@afforai/citation-js-core~CSL>} data
    * @param {Object} [opts]
-   * @param {module:@citation-js/core.plugins.dict~dictName|String} [opts.format='text'] - Output dict name or `'object'` for a representation
+   * @param {module:@afforai/citation-js-core.plugins.dict~dictName|String} [opts.format='text'] - Output dict name or `'object'` for a representation
    * @return {String|Array<Object>}
    */
   bibtex: factory(mapBibtex, format),
 
   /**
    * @function
-   * @implements module:@citation-js/core.plugins.output~formatter
-   * @memberof module:@citation-js/plugin-bibtex.output
-   * @param {Array<module:@citation-js/core~CSL>} data
+   * @implements module:@afforai/citation-js-core.plugins.output~formatter
+   * @memberof module:@afforai/citation-js-plugin-bibtex.output
+   * @param {Array<module:@afforai/citation-js-core~CSL>} data
    * @param {Object} [opts]
-   * @param {module:@citation-js/core.plugins.dict~dictName|String} [opts.format='text'] - Output dict name or `'object'` for a representation
+   * @param {module:@afforai/citation-js-core.plugins.dict~dictName|String} [opts.format='text'] - Output dict name or `'object'` for a representation
    * @return {String|Array<Object>}
    */
   biblatex: factory(mapBiblatex, format),
 
   /**
    * @function
-   * @implements module:@citation-js/core.plugins.output~formatter
-   * @memberof module:@citation-js/plugin-bibtex.output
-   * @param {Array<module:@citation-js/core~CSL>} data
+   * @implements module:@afforai/citation-js-core.plugins.output~formatter
+   * @memberof module:@afforai/citation-js-plugin-bibtex.output
+   * @param {Array<module:@afforai/citation-js-core~CSL>} data
    * @param {Object} [opts]
-   * @param {module:@citation-js/core.plugins.dict~dictName|String} [opts.format='text'] - Output dict name or `'object'` for a representation
+   * @param {module:@afforai/citation-js-core.plugins.dict~dictName|String} [opts.format='text'] - Output dict name or `'object'` for a representation
    * @return {String|Array<Object>}
    */
   bibtxt: factory(mapBibtex, formatBibtxt)

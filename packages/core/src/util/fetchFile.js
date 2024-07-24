@@ -16,7 +16,7 @@ if (typeof process !== 'undefined' && process && process.release && process.rele
 }
 
 /**
- * @typedef module:@citation-js/core.util.fetchFile~options
+ * @typedef module:@afforai/citation-js-core.util.fetchFile~options
  * @type {Object}
  * @property {Boolean} checkContentType
  * @property {Object} headers
@@ -43,7 +43,7 @@ function normaliseHeaders (headers) {
 
 /**
  * @access private
- * @param {module:@citation-js/core.util.fetchFile~options} [opts={}] - Request options
+ * @param {module:@afforai/citation-js-core.util.fetchFile~options} [opts={}] - Request options
  * @return {Object} new options
  */
 function parseOpts (opts = {}) {
@@ -125,10 +125,10 @@ function checkResponse (response, opts) {
  *
  * @access protected
  * @method fetchFile
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
  * @param {String} url - The input url
- * @param {module:@citation-js/core.util.fetchFile~options} [opts] - Request options
+ * @param {module:@afforai/citation-js-core.util.fetchFile~options} [opts] - Request options
  *
  * @return {String} The fetched string
  */
@@ -146,10 +146,10 @@ export function fetchFile (url, opts) {
  *
  * @access protected
  * @method fetchFileAsync
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
  * @param {String} url - The input url
- * @param {module:@citation-js/core.util.fetchFile~options} [opts] - Request options
+ * @param {module:@afforai/citation-js-core.util.fetchFile~options} [opts] - Request options
  *
  * @return {Promise<String>} The fetched string
  */
@@ -168,10 +168,10 @@ export async function fetchFileAsync (url, opts) {
  *
  * @access protected
  * @method setUserAgent
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
  * @param {String} url - The input url
- * @param {module:@citation-js/core.util.fetchFile~options} [opts] - Request options
+ * @param {module:@afforai/citation-js-core.util.fetchFile~options} [opts] - Request options
  */
 export function setUserAgent (newUserAgent) {
   userAgent = newUserAgent

@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 import { format as formatDate } from '@citation-js/date'
 import types from './bibtexTypes.json'
 import {

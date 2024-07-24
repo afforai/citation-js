@@ -1,26 +1,26 @@
-import { util } from '@citation-js/core'
+import { util } from '@afforai/citation-js-core'
 import prepareEngine from './engines.js'
 
 /**
  * https://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#cite-items
  *
- * @typedef {Object} module:@citation-js/plugin-csl.output~CiteItem
+ * @typedef {Object} module:@afforai/citation-js-plugin-csl.output~CiteItem
  * @property {String} id
  */
 
 /**
  * https://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#citations
  *
- * @typedef {Object} module:@citation-js/plugin-csl.output~Citation
- * @property {Array<module:@citation-js/plugin-csl.output~CiteItem>} citationItems
+ * @typedef {Object} module:@afforai/citation-js-plugin-csl.output~Citation
+ * @property {Array<module:@afforai/citation-js-plugin-csl.output~CiteItem>} citationItems
  * @property {Object} properties
  * @property {Number} properties.noteIndex
  */
 
 /**
  * @access private
- * @param {String|module:@citation-js/plugin-csl.output~CiteItem} citeItem
- * @return {module:@citation-js/plugin-csl.output~CiteItem} citeItem
+ * @param {String|module:@afforai/citation-js-plugin-csl.output~CiteItem} citeItem
+ * @return {module:@afforai/citation-js-plugin-csl.output~CiteItem} citeItem
  */
 function prepareCiteItem (citeItem) {
   return typeof citeItem === 'object' ? citeItem : { id: citeItem }
@@ -28,8 +28,8 @@ function prepareCiteItem (citeItem) {
 
 /**
  * @access private
- * @param {String|Array<String>|Array<module:@citation-js/plugin-csl.output~CiteItem>|module:@citation-js/plugin-csl.output~CiteItem|module:@citation-js/plugin-csl.output~Citation} citation
- * @return {module:@citation-js/plugin-csl.output~Citation} citation
+ * @param {String|Array<String>|Array<module:@afforai/citation-js-plugin-csl.output~CiteItem>|module:@afforai/citation-js-plugin-csl.output~CiteItem|module:@afforai/citation-js-plugin-csl.output~Citation} citation
+ * @return {module:@afforai/citation-js-plugin-csl.output~Citation} citation
  */
 function prepareCitation (citation) {
   if (citation.citationItems) {
@@ -44,8 +44,8 @@ function prepareCitation (citation) {
 
 /**
  * @access private
- * @param {Array<String>|Array<module:@citation-js/plugin-csl.output~CiteItem>|Array<module:@citation-js/plugin-csl.output~Citation>} [context=[]]
- * @return {Array<module:@citation-js/plugin-csl.output~Citation>} citations
+ * @param {Array<String>|Array<module:@afforai/citation-js-plugin-csl.output~CiteItem>|Array<module:@afforai/citation-js-plugin-csl.output~Citation>} [context=[]]
+ * @return {Array<module:@afforai/citation-js-plugin-csl.output~Citation>} citations
  */
 function prepareCitations (context) {
   if (!context) {
@@ -77,8 +77,8 @@ function prepareCitations (context) {
  * // '(“Item A,” 2016, p. 123)'
  * ```
  *
- * @memberof module:@citation-js/plugin-csl.output
- * @implements module:@citation-js/core.plugins.output~formatter
+ * @memberof module:@afforai/citation-js-plugin-csl.output
+ * @implements module:@afforai/citation-js-core.plugins.output~formatter
  * @method citation
  *
  * @param {Array<CSL>} data
@@ -86,7 +86,7 @@ function prepareCitations (context) {
  * @param {String} [options.template='apa']
  * @param {String} [options.lang]
  * @param {String} [options.format='text']
- * @param {module:@citation-js/plugin-csl.output~Entries} [options.entry] - list of ids or cite-items of entries to include in the citation (defaults to all)
+ * @param {module:@afforai/citation-js-plugin-csl.output~Entries} [options.entry] - list of ids or cite-items of entries to include in the citation (defaults to all)
  * @param {Array<String>} [options.citationsPre=[]]
  * @param {Array<String>} [options.citationsPost=[]]
  *

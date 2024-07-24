@@ -1,6 +1,6 @@
 /**
  * @namespace util
- * @memberof module:@citation-js/core
+ * @memberof module:@afforai/citation-js-core
  */
 
 import { upgradeCsl, downgradeCsl } from './csl.js'

@@ -16,9 +16,9 @@
  *   * `format`: output (markup) format. Note: this doesn't support the output format dictionaries
  *   * `entry` (`String`, `Array[String]`): entry ID or list of entry IDs to identify the items to cite
  *
- * For all formats and format-specific options, check out {@link module:@citation-js/plugin-csl.output}.
+ * For all formats and format-specific options, check out {@link module:@afforai/citation-js-plugin-csl.output}.
  *
- * @module @citation-js/plugin-csl
+ * @module @afforai/citation-js-plugin-csl
  */
 
 /**
@@ -34,17 +34,17 @@
  */
 
 /**
- * @typedef {module:@citation-js/plugin-csl.output~Entry|Array<module:@citation-js/plugin-csl.output~Entry>} module:@citation-js/plugin-csl.output~Entries
+ * @typedef {module:@afforai/citation-js-plugin-csl.output~Entry|Array<module:@afforai/citation-js-plugin-csl.output~Entry>} module:@afforai/citation-js-plugin-csl.output~Entries
  */
 
 /**
- * @typedef {String|module:@citation-js/plugin-csl.output~DetailedEntry} module:@citation-js/plugin-csl.output~Entry
+ * @typedef {String|module:@afforai/citation-js-plugin-csl.output~DetailedEntry} module:@afforai/citation-js-plugin-csl.output~Entry
  */
 
 /**
  * Corresponds directly to the {@link https://citeproc-js.readthedocs.io/en/latest/csl-json/markup.html#cite-items|cite-items of citeproc-js}.
  *
- * @typedef {Object} module:@citation-js/plugin-csl.output~DetailedEntry
+ * @typedef {Object} module:@afforai/citation-js-plugin-csl.output~DetailedEntry
  * @property {Number|String} [locator] - page, figure, section etc. number of the citation
  * @property {String} [label='page'] - type of locator to accompany the locator number
  * @property {Boolean} [suppress-author=false]
@@ -53,7 +53,7 @@
  * @property {String} [suffix]
  */
 
-import { plugins } from '@citation-js/core'
+import { plugins } from '@afforai/citation-js-core'
 
 import { locales } from './locales.js'
 import { templates } from './styles.js'
@@ -65,8 +65,8 @@ import citation from './citation.js'
 plugins.add('@csl', {
   /**
    * @namespace output
-   * @type Object<module:@citation-js/core.plugins.output~formatterName,module:@citation-js/core.plugins.output~formatter>
-   * @memberof module:@citation-js/plugin-csl
+   * @type Object<module:@afforai/citation-js-core.plugins.output~formatterName,module:@afforai/citation-js-core.plugins.output~formatter>
+   * @memberof module:@afforai/citation-js-plugin-csl
    */
   output: {
     bibliography,
@@ -75,7 +75,7 @@ plugins.add('@csl', {
 
   /**
    * @namespace config
-   * @memberof module:@citation-js/plugin-csl
+   * @memberof module:@afforai/citation-js-plugin-csl
    */
   config: {
     /**
@@ -97,9 +97,9 @@ plugins.add('@csl', {
      * let makeBibliography = citeproc.makeBibliography()
      * ```
      *
-     * @memberof module:@citation-js/plugin-csl.config
+     * @memberof module:@afforai/citation-js-plugin-csl.config
      * @method engine
-     * @param {module:@citation-js/core~CSL} data
+     * @param {module:@afforai/citation-js-core~CSL} data
      * @param {String} style
      * @param {String} locale
      * @param {String} format
@@ -124,8 +124,8 @@ plugins.add('@csl', {
      * })
      * ```
      *
-     * @memberof module:@citation-js/plugin-csl.config
-     * @var {module:@citation-js/core.util.Register} locales
+     * @memberof module:@afforai/citation-js-plugin-csl.config
+     * @var {module:@afforai/citation-js-core.util.Register} locales
      */
     locales,
 
@@ -147,8 +147,8 @@ plugins.add('@csl', {
      * })
      * ```
      *
-     * @memberof module:@citation-js/plugin-csl.config
-     * @var {module:@citation-js/core.util.Register} templates
+     * @memberof module:@afforai/citation-js-plugin-csl.config
+     * @var {module:@afforai/citation-js-core.util.Register} templates
      */
     templates
   }

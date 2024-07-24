@@ -3,7 +3,7 @@
  *
  * @access protected
  * @method parse
- * @memberof module:@citation-js/plugin-doi.parsers.id
+ * @memberof module:@afforai/citation-js-plugin-doi.parsers.id
  *
  * @param {String} data - DOIs
  *

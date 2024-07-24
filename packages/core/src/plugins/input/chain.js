@@ -30,11 +30,11 @@ function prepareParseGraph (graph) {
 
 /**
  * @access private
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  * @constructor ChainParser
  *
- * @param {module:@citation-js/core~InputData} input
- * @param {module:@citation-js/core~InputOptions} options
+ * @param {module:@afforai/citation-js-core~InputData} input
+ * @param {module:@afforai/citation-js-core~InputOptions} options
  */
 class ChainParser {
   constructor (input, options = {}) {
@@ -90,7 +90,7 @@ class ChainParser {
    * Finish the iteration and return parsed data.
    *
    * @access public
-   * @return Array<module:@citation-js/core~CSL>
+   * @return Array<module:@afforai/citation-js-core~CSL>
    */
   end () {
     if (this.error) {
@@ -116,12 +116,12 @@ class ChainParser {
  *
  * @access protected
  * @method chain
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core~InputData} input - input data
- * @param {module:@citation-js/core~InputOptions} [options] - options
+ * @param {module:@afforai/citation-js-core~InputData} input - input data
+ * @param {module:@afforai/citation-js-core~InputOptions} [options] - options
  *
- * @return {Array<module:@citation-js/core~CSL>} The parsed input
+ * @return {Array<module:@afforai/citation-js-core~CSL>} The parsed input
  */
 export const chain = (...args) => {
   const chain = new ChainParser(...args)
@@ -142,11 +142,11 @@ export const chain = (...args) => {
  *
  * @access protected
  * @method chainLink
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core~InputData} input - input data
+ * @param {module:@afforai/citation-js-core~InputData} input - input data
  *
- * @return {module:@citation-js/core~InputData} The parsed input
+ * @return {module:@afforai/citation-js-core~InputData} The parsed input
  */
 export const chainLink = (input) => {
   const type = parseType(input)
@@ -160,12 +160,12 @@ export const chainLink = (input) => {
  *
  * @access protected
  * @method chainAsync
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core~InputData} input - input data
- * @param {module:@citation-js/core~InputOptions} [options] - options
+ * @param {module:@afforai/citation-js-core~InputData} input - input data
+ * @param {module:@afforai/citation-js-core~InputOptions} [options] - options
  *
- * @return {Promise<Array<module:@citation-js/core~CSL>>} The parsed input
+ * @return {Promise<Array<module:@afforai/citation-js-core~CSL>>} The parsed input
  */
 export const chainAsync = async (...args) => {
   const chain = new ChainParser(...args)
@@ -182,11 +182,11 @@ export const chainAsync = async (...args) => {
  *
  * @access protected
  * @method chainLinkAsync
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
- * @param {module:@citation-js/core~InputData} input - The input data
+ * @param {module:@afforai/citation-js-core~InputData} input - The input data
  *
- * @return {Promise<module:@citation-js/core~InputData>} The parsed input
+ * @return {Promise<module:@afforai/citation-js-core~InputData>} The parsed input
  */
 export const chainLinkAsync = async (input) => {
   const type = parseType(input)

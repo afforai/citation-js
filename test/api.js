@@ -47,7 +47,7 @@ module.exports = function (core) {
     fakeCore.util.fetchFile = fetchFile
     fakeCore.util.fetchFileAsync = fetchFileAsync
 
-    mock('@citation-js/core', fakeCore)
+    mock('@afforai/citation-js-core', fakeCore)
   } else {
     // start sync-request beforehand (interferes with the reporter otherwise)
     try { require('sync-request')() } catch (e) { }

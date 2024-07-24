@@ -3,7 +3,7 @@
  *
  * @access public
  * @method typeOf
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
  * @param {*} thing - input data or anything else
  *
@@ -23,11 +23,11 @@ export function typeOf (thing) {
 /**
  * @access public
  * @method dataTypeOf
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
  * @param {*} thing - input data or anything else
  *
- * @return {module:@citation-js/core.plugins.input~dataType} dataType
+ * @return {module:@afforai/citation-js-core.plugins.input~dataType} dataType
  */
 export function dataTypeOf (thing) {
   switch (typeof thing) {

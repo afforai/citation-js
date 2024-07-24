@@ -1,15 +1,15 @@
-# @citation-js/core
+# @afforai/citation-js-core
 Convert different bibliographic metadata sources.
 
-[![NPM version](https://img.shields.io/npm/v/@citation-js/core.svg)](https://npmjs.org/package/@citation-js/core)
-[![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/core.svg)](https://npmcharts.com/compare/@citation-js%2Fcore?minimal=true)
-![License](https://img.shields.io/npm/l/@citation-js/core.svg)
-![Dependency status](https://img.shields.io/librariesio/release/npm/@citation-js/core)
+[![NPM version](https://img.shields.io/npm/v/@afforai/citation-js-core.svg)](https://npmjs.org/package/@afforai/citation-js-core)
+[![NPM total downloads](https://img.shields.io/npm/dt/@afforai/citation-js-core.svg)](https://npmcharts.com/compare/@citation-js%2Fcore?minimal=true)
+![License](https://img.shields.io/npm/l/@afforai/citation-js-core.svg)
+![Dependency status](https://img.shields.io/librariesio/release/npm/@afforai/citation-js-core)
 ---
 
 ## Install
 
-    npm install @citation-js/core
+    npm install @afforai/citation-js-core
 
 ## Usage
 
@@ -24,7 +24,7 @@ You can read a guide on how to get started, together with some tutorials and exa
 To use the [`Cite`](#cite) constructor, `require()` the module like this:
 
 ```js
-const {Cite} = require('@citation-js/core')
+const {Cite} = require('@afforai/citation-js-core')
 ```
 
 For example, to get the bibliographical data of the Wikidata item [`wd:Q21972834`](https://wikidata.org/wiki/Q21972834), and then format it in HTML, English and APA:

@@ -5,7 +5,7 @@ import { parse as getUrls } from './id.js'
 /**
  * @access private
  * @namespace response
- * @memberof module:@citation-js/plugin-wikidata.parsers
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers
  */
 
 const SIMPLIFY_OPTS = {
@@ -90,7 +90,7 @@ const FETCH_ADDITIONAL = {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entity
  * @param {Object} needed
  * @return {Array<String>}
@@ -118,7 +118,7 @@ function collectAdditionalIds (entity, needed) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
  * @param {Array<String>} old
  * @return {Array<String>} needed
@@ -183,16 +183,16 @@ function simplifyEntities (entities) {
 
 /**
  * @typedef {Object} loopState
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @property {Array<String>} needed
  * @property {Array<String>} incomplete
  */
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
- * @param {Object<String,module:@citation-js/core~CSL>} cache
- * @return {module:@citation-js/plugin-wikidata.parsers.response~loopState}
+ * @param {Object<String,module:@afforai/citation-js-core~CSL>} cache
+ * @return {module:@afforai/citation-js-plugin-wikidata.parsers.response~loopState}
  */
 function initLoopState (entities, cache) {
   return {
@@ -202,9 +202,9 @@ function initLoopState (entities, cache) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Array<String>} needed
- * @param {Object<String,module:@citation-js/core~CSL>} cache
+ * @param {Object<String,module:@afforai/citation-js-core~CSL>} cache
  * @return {Array<String>} API URLs
  */
 function filterIdsAndGetUrls (needed, cache) {
@@ -213,9 +213,9 @@ function filterIdsAndGetUrls (needed, cache) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} response
- * @param {Object<String,module:@citation-js/core~CSL>} cache
+ * @param {Object<String,module:@afforai/citation-js-core~CSL>} cache
  */
 function addItemsToCache (response, cache) {
   const { entities } = JSON.parse(response)
@@ -223,10 +223,10 @@ function addItemsToCache (response, cache) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
- * @param {module:@citation-js/plugin-wikidata.parsers.response~loopState} state
- * @param {Object<String,module:@citation-js/core~CSL>} cache
- * @return {module:@citation-js/plugin-wikidata.parsers.response~loopState}
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
+ * @param {module:@afforai/citation-js-plugin-wikidata.parsers.response~loopState} state
+ * @param {Object<String,module:@afforai/citation-js-core~CSL>} cache
+ * @return {module:@afforai/citation-js-plugin-wikidata.parsers.response~loopState}
  */
 function updateLoopState (state, cache) {
   return {
@@ -236,19 +236,19 @@ function updateLoopState (state, cache) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
- * @param {Object<String,module:@citation-js/core~CSL>} cache
- * @return {Array<module:@citation-js/core~CSL>}
+ * @param {Object<String,module:@afforai/citation-js-core~CSL>} cache
+ * @return {Array<module:@afforai/citation-js-core~CSL>}
  */
 function finalizeItems (entities, cache) {
   return Object.keys(entities).map(id => cache[id])
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
- * @return {Object<String,module:@citation-js/core~CSL>}
+ * @return {Object<String,module:@afforai/citation-js-core~CSL>}
  */
 export function fillCache (entities) {
   const cache = simplifyEntities(entities)
@@ -265,9 +265,9 @@ export function fillCache (entities) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
- * @return {Array<module:@citation-js/core~CSL>}
+ * @return {Array<module:@afforai/citation-js-core~CSL>}
  */
 export function parse (entities) {
   const cache = fillCache(entities)
@@ -276,9 +276,9 @@ export function parse (entities) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
- * @return {Promise<Object<String,module:@citation-js/core~CSL>>}
+ * @return {Promise<Object<String,module:@afforai/citation-js-core~CSL>>}
  */
 export async function fillCacheAsync (entities) {
   const cache = simplifyEntities(entities)
@@ -297,9 +297,9 @@ export async function fillCacheAsync (entities) {
 }
 
 /**
- * @memberof module:@citation-js/plugin-wikidata.parsers.response
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.response
  * @param {Object} entities
- * @return {Promise<Array<module:@citation-js/core~CSL>>}
+ * @return {Promise<Array<module:@afforai/citation-js-core~CSL>>}
  */
 export async function parseAsync (entities) {
   const cache = await fillCacheAsync(entities)

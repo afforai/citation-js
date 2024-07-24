@@ -5,11 +5,11 @@ import fetchDoiType from './type.js'
  *
  * @access protected
  * @method parse
- * @memberof module:@citation-js/plugin-doi.parsers.json
+ * @memberof module:@afforai/citation-js-plugin-doi.parsers.json
  *
  * @param {Object} data - The input data
  *
- * @return {module:@citation-js/core~CSL} The formatted input data
+ * @return {module:@afforai/citation-js-core~CSL} The formatted input data
  */
 function parseDoiJson (data) {
   const res = {

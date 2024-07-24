@@ -38,10 +38,10 @@
     "@citation-js/name": "^0.4.2"
   },
   "devDependencies": {
-    "@citation-js/core": "^0.7.16"
+    "@afforai/citation-js-core": "^0.7.16"
   },
   "peerDependencies": {
-    "@citation-js/core": "^0.7.0"
+    "@afforai/citation-js-core": "^0.7.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

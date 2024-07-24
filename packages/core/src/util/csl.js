@@ -2,7 +2,7 @@
  * Upgrade CSL item from 1.0.1 to 1.0.2
  *
  * @method upgradeCsl
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
  * @param {Object} item - Input object
  *
@@ -28,7 +28,7 @@ export function upgradeCsl (item) {
  * Downgrade CSL item from 1.0.2 to 1.0.1
  *
  * @method downgradeCsl
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
  * @param {Object} item - Input object
  *

@@ -10,10 +10,10 @@ import * as staticMethods from './static.js'
  *
  * @access public
  * @constructor Cite
- * @memberof module:@citation-js/core
+ * @memberof module:@afforai/citation-js-core
  *
- * @param {module:@citation-js/core~InputData} data - Input data
- * @param {module:@citation-js/core~InputOptions} [options={}] - Input options
+ * @param {module:@afforai/citation-js-core~InputData} data - Input data
+ * @param {module:@afforai/citation-js-core~InputOptions} [options={}] - Input options
  */
 function Cite (data, options = {}) {
   // Making it Scope-Safe
@@ -25,9 +25,9 @@ function Cite (data, options = {}) {
    * The default options for the output. See [input options](../#cite.in.options)
    *
    * @access protected
-   * @memberof module:@citation-js/core.Cite#
+   * @memberof module:@afforai/citation-js-core.Cite#
    *
-   * @var {module:@citation-js/core~InputOptions} _options
+   * @var {module:@afforai/citation-js-core~InputOptions} _options
    */
   this._options = options
 
@@ -35,7 +35,7 @@ function Cite (data, options = {}) {
    * The saved-images-log
    *
    * @access protected
-   * @memberof module:@citation-js/core.Cite#
+   * @memberof module:@afforai/citation-js-core.Cite#
    *
    * @var {Array<Array<String>>} log
    */
@@ -45,9 +45,9 @@ function Cite (data, options = {}) {
    * The parsed data
    *
    * @access protected
-   * @memberof module:@citation-js/core.Cite#
+   * @memberof module:@afforai/citation-js-core.Cite#
    *
-   * @var {Array<module:@citation-js/core~CSL>} data
+   * @var {Array<module:@afforai/citation-js-core~CSL>} data
    */
   this.data = []
 

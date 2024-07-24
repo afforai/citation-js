@@ -1,11 +1,11 @@
 /**
- * @memberof module:@citation-js/core
+ * @memberof module:@afforai/citation-js-core
  * @var {Object} logger
  * @property _output
  * @property {Console} _console
  * @property {Array<String>} _log
- * @property {Array<module:@citation-js/core~logLevel>} _levels
- * @property {module:@citation-js/core~logLevel} level
+ * @property {Array<module:@afforai/citation-js-core~logLevel>} _levels
+ * @property {module:@afforai/citation-js-core~logLevel} level
  */
 const logger = {
   _output (level, scope, msg) {
@@ -21,7 +21,7 @@ const logger = {
   _log: [],
 
   /**
-   * @typedef {String} module:@citation-js/core~logLevel
+   * @typedef {String} module:@afforai/citation-js-core~logLevel
    */
   _levels: ['http', 'debug', 'unmapped', 'info', 'warn', 'error', 'silent'],
 

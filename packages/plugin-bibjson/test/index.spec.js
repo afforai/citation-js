@@ -2,7 +2,7 @@
 
 const assert = require('assert')
 require('../src/index.js')
-const { plugins } = require('@citation-js/core')
+const { plugins } = require('@afforai/citation-js-core')
 const data = require('./data.json')
 
 describe('input', function () {

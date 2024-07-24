@@ -1,16 +1,16 @@
 /**
  * ## Formats
  *
- * For a full list, check out {@link module:@citation-js/plugin-wikidata.formats}.
+ * For a full list, check out {@link module:@afforai/citation-js-plugin-wikidata.formats}.
  *
  * ## Configuration
  *
- * Check out {@link module:@citation-js/plugin-wikidata.config}.
+ * Check out {@link module:@afforai/citation-js-plugin-wikidata.config}.
  *
- * @module @citation-js/plugin-wikidata
+ * @module @afforai/citation-js-plugin-wikidata
  */
 
-import { plugins } from '@citation-js/core'
+import { plugins } from '@afforai/citation-js-core'
 
 import * as id from './id.js'
 import * as entity from './entity.js'
@@ -20,8 +20,8 @@ import * as api from './api.js'
 import config from './config.json'
 
 /**
- * @constant {module:@citation-js/core.plugins~pluginRef} ref
- * @memberof module:@citation-js/plugin-wikidata
+ * @constant {module:@afforai/citation-js-core.plugins~pluginRef} ref
+ * @memberof module:@afforai/citation-js-plugin-wikidata
  * @default '@wikidata'
  */
 const ref = '@wikidata'
@@ -29,58 +29,58 @@ const ref = '@wikidata'
 /**
  * @access protected
  * @namespace parsers
- * @memberof module:@citation-js/plugin-wikidata
+ * @memberof module:@afforai/citation-js-plugin-wikidata
  */
 const parsers = {
   /**
    * @access protected
    * @namespace id
-   * @memberof module:@citation-js/plugin-wikidata.parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.parsers
    */
   id,
 
   /**
    * @access protected
    * @namespace entity
-   * @memberof module:@citation-js/plugin-wikidata.parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.parsers
    */
   entity,
 
   /**
    * @access protected
    * @namespace prop
-   * @memberof module:@citation-js/plugin-wikidata.parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.parsers
    */
   prop,
 
   /**
    * @access protected
    * @namespace url
-   * @memberof module:@citation-js/plugin-wikidata.parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.parsers
    */
   url,
 
   /**
    * @access protected
    * @namespace api
-   * @memberof module:@citation-js/plugin-wikidata.parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.parsers
    */
   api
 }
 
 /**
  * @namespace formats
- * @type Object<module:@citation-js/core.plugins.input~format,module:@citation-js/core.plugins.input~parsers>
- * @memberof module:@citation-js/plugin-wikidata
+ * @type Object<module:@afforai/citation-js-core.plugins.input~format,module:@afforai/citation-js-core.plugins.input~parsers>
+ * @memberof module:@afforai/citation-js-plugin-wikidata
  */
 const formats = {
   /**
    * Wikidata ID/Q-number.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@wikidata/id': {
     parse: id.parse,
@@ -91,12 +91,12 @@ const formats = {
   },
 
   /**
-   * List of {@link module:@citation-js/plugin-wikidata.formats."@wikidata/id"|Wikidata IDs}.
+   * List of {@link module:@afforai/citation-js-plugin-wikidata.formats."@wikidata/id"|Wikidata IDs}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@wikidata/list+text': {
     parse (data) {
@@ -111,11 +111,11 @@ const formats = {
   /**
    * Wikidata API URL.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~asyncDataParser} parseAsync
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~asyncDataParser} parseAsync
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@wikidata/api': {
     parse: api.parse,
@@ -128,13 +128,13 @@ const formats = {
   },
 
   /**
-   * Array of {@link module:@citation-js/plugin-wikidata.formats."@wikidata/api"|Wikidata API URLs}.
+   * Array of {@link module:@afforai/citation-js-plugin-wikidata.formats."@wikidata/api"|Wikidata API URLs}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~asyncDataParser} parseAsync
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~asyncDataParser} parseAsync
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@wikidata/array+api': {
     parse: api.parse,
@@ -146,12 +146,12 @@ const formats = {
   },
 
   /**
-   * URL to {@link module:@citation-js/plugin-wikidata.formats."@wikidata/id"|Wikidata ID}.
+   * URL to {@link module:@afforai/citation-js-plugin-wikidata.formats."@wikidata/id"|Wikidata ID}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@wikidata/url': {
     parse: url.parse,
@@ -164,13 +164,13 @@ const formats = {
 
   /**
    * Comma or whitespace-separated list of
-   * {@link module:@citation-js/plugin-wikidata.formats."@wikidata/id"|Wikidata IDs}.
+   * {@link module:@afforai/citation-js-plugin-wikidata.formats."@wikidata/id"|Wikidata IDs}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
-   * @property {module:@citation-js/core.plugins.input~format} outputs
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
+   * @property {module:@afforai/citation-js-core.plugins.input~format} outputs
    */
   '@wikidata/list+object': {
     parse: id.parse,
@@ -183,11 +183,11 @@ const formats = {
   /**
    * Wikidata API response.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~asyncDataParser} parseAsync
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~asyncDataParser} parseAsync
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
    */
   '@wikidata/object': {
     parse: entity.parse,
@@ -199,13 +199,13 @@ const formats = {
   },
 
   /**
-   * Array of {@link module:@citation-js/plugin-wikidata.formats."@wikidata/object"|Wikidata API responses}.
+   * Array of {@link module:@afforai/citation-js-plugin-wikidata.formats."@wikidata/object"|Wikidata API responses}.
    *
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
-   * @property {module:@citation-js/core.plugins.input~typeParser} parseType
-   * @property {module:@citation-js/core.plugins.input~format} outputs
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+   * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
+   * @property {module:@afforai/citation-js-core.plugins.input~format} outputs
    */
   '@wikidata/array+object': {
     parse (responses) {
@@ -227,9 +227,9 @@ const formats = {
    * Convert a Wikidata prop+value+entity tuple to CSL.
    *
    * @deprecated
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
    */
   '@wikidata/prop': {
     parse: prop.parseProp
@@ -239,9 +239,9 @@ const formats = {
    * Convert a Wikidata ID to a CSL type.
    *
    * @deprecated
-   * @type module:@citation-js/core.plugins.input~parsers
-   * @memberof module:@citation-js/plugin-wikidata.formats
-   * @property {module:@citation-js/core.plugins.input~dataParser} parse
+   * @type module:@afforai/citation-js-core.plugins.input~parsers
+   * @memberof module:@afforai/citation-js-plugin-wikidata.formats
+   * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
    */
   '@wikidata/type': {
     parse: prop.parseType
@@ -255,7 +255,7 @@ plugins.add(ref, {
    * Input languages can be specified:
    *
    * ```js
-   * const { plugins } = require('@citation-js/core')
+   * const { plugins } = require('@afforai/citation-js-core')
    *
    * const config = plugins.config.get('@wikidata')
    *
@@ -264,7 +264,7 @@ plugins.add(ref, {
    * ```
    *
    * @namespace config
-   * @memberof module:@citation-js/plugin-wikidata
+   * @memberof module:@afforai/citation-js-plugin-wikidata
    */
   config
 })

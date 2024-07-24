@@ -2,7 +2,7 @@
  * Get Wikidata ID from Wikidata URL
  *
  * @access protected
- * @memberof module:@citation-js/plugin-wikidata.parsers.url
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.url
  * @param {String} input - Wikidata URL
  * @return {String} Wikidata ID
  */

@@ -1,55 +1,55 @@
 /**
- * @typedef module:@citation-js/core.plugins.input~format
+ * @typedef module:@afforai/citation-js-core.plugins.input~format
  * @type String
  */
 
 /**
- * @typedef module:@citation-js/core.plugins.input~parsers
+ * @typedef module:@afforai/citation-js-core.plugins.input~parsers
  * @type Object
  *
- * @property {module:@citation-js/core.plugins.input~dataParser} parse
- * @property {module:@citation-js/core.plugins.input~asyncDataParser} parseAsync
- * @property {module:@citation-js/core.plugins.input~typeParser} parseType
+ * @property {module:@afforai/citation-js-core.plugins.input~dataParser} parse
+ * @property {module:@afforai/citation-js-core.plugins.input~asyncDataParser} parseAsync
+ * @property {module:@afforai/citation-js-core.plugins.input~typeParser} parseType
  */
 
 /**
- * @callback module:@citation-js/core.plugins.input~dataParser
+ * @callback module:@afforai/citation-js-core.plugins.input~dataParser
  * @param {InputData} input
  * @return parsed data
  */
 
 /**
  * @async
- * @callback module:@citation-js/core.plugins.input~asyncDataParser
+ * @callback module:@afforai/citation-js-core.plugins.input~asyncDataParser
  * @param {InputData} input
  * @return parsed data
  */
 
 /**
- * @typedef module:@citation-js/core.plugins.input~typeParser
+ * @typedef module:@afforai/citation-js-core.plugins.input~typeParser
  * @type Object
  *
- * @property {module:@citation-js/core.plugins.input~dataType} dataType
- * @property {module:@citation-js/core.plugins.input~predicate|RegExp} predicate
- * @property {module:@citation-js/core.plugins.input~tokenList|RegExp} tokenList
- * @property {module:@citation-js/core.plugins.input~propertyConstraint|Array<module:@citation-js/core.plugins.input~propertyConstraint>} propertyConstraint
- * @property {module:@citation-js/core.plugins.input~elementConstraint|Array<module:@citation-js/core.plugins.input~elementConstraint>} elementConstraint
- * @property {module:@citation-js/core.plugins.input~format} extends
+ * @property {module:@afforai/citation-js-core.plugins.input~dataType} dataType
+ * @property {module:@afforai/citation-js-core.plugins.input~predicate|RegExp} predicate
+ * @property {module:@afforai/citation-js-core.plugins.input~tokenList|RegExp} tokenList
+ * @property {module:@afforai/citation-js-core.plugins.input~propertyConstraint|Array<module:@afforai/citation-js-core.plugins.input~propertyConstraint>} propertyConstraint
+ * @property {module:@afforai/citation-js-core.plugins.input~elementConstraint|Array<module:@afforai/citation-js-core.plugins.input~elementConstraint>} elementConstraint
+ * @property {module:@afforai/citation-js-core.plugins.input~format} extends
  */
 
 /**
- * @typedef module:@citation-js/core.plugins.input~dataType
+ * @typedef module:@afforai/citation-js-core.plugins.input~dataType
  * @type String
  */
 
 /**
- * @callback module:@citation-js/core.plugins.input~predicate
+ * @callback module:@afforai/citation-js-core.plugins.input~predicate
  * @param {InputData} input
  * @return {Boolean} pass
  */
 
 /**
- * @typedef module:@citation-js/core.plugins.input~tokenList
+ * @typedef module:@afforai/citation-js-core.plugins.input~tokenList
  * @type Object
  * @property {RegExp} token - token pattern
  * @property {RegExp} [split=/\s+/] - token delimiter
@@ -58,20 +58,20 @@
  */
 
 /**
- * @typedef module:@citation-js/core.plugins.input~propertyConstraint
+ * @typedef module:@afforai/citation-js-core.plugins.input~propertyConstraint
  * @type Object
  * @property {String|Array<String>} [props=[]]
  * @property {String} [match='every']
- * @property {module:@citation-js/core.plugins.input~valuePredicate} [value]
+ * @property {module:@afforai/citation-js-core.plugins.input~valuePredicate} [value]
  */
 
 /**
- * @callback module:@citation-js/core.plugins.input~valuePredicate
+ * @callback module:@afforai/citation-js-core.plugins.input~valuePredicate
  * @param value
  * @return {Boolean} pass
  */
 
 /**
- * @typedef module:@citation-js/core.plugins.input~elementConstraint
- * @type module:@citation-js/core.plugins.input~format
+ * @typedef module:@afforai/citation-js-core.plugins.input~elementConstraint
+ * @type module:@afforai/citation-js-core.plugins.input~format
  */

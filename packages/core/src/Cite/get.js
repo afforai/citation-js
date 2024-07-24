@@ -7,7 +7,7 @@ import { clean as parseCsl } from '../plugins/input/csl.js'
  *
  * @access public
  * @method getIds
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
  * @return {Array<String>} List of IDs
  */
@@ -20,7 +20,7 @@ export function getIds () {
  *
  * @access public
  * @method format
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  *
  * @param {String} format - format module name
  * @param {...*} options - module options (see relevant documentation)
@@ -36,11 +36,11 @@ export function format (format, ...options) {
  *
  * @access public
  * @method get
- * @memberof module:@citation-js/core.Cite#
+ * @memberof module:@afforai/citation-js-core.Cite#
  * @tutorial output
- * @deprecated use {@link module:@citation-js/core.Cite#format}
+ * @deprecated use {@link module:@afforai/citation-js-core.Cite#format}
  *
- * @param {module:@citation-js/core~OutputOptions} [options={}] - Output options
+ * @param {module:@afforai/citation-js-core~OutputOptions} [options={}] - Output options
  *
  * @return {String|Array<Object>} The formatted data
  */

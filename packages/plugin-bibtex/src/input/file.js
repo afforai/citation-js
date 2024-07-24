@@ -1,4 +1,4 @@
-import { util, logger } from '@citation-js/core'
+import { util, logger } from '@afforai/citation-js-core'
 
 import moo from 'moo'
 import config from '../config.js'

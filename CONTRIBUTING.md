@@ -48,7 +48,7 @@ and autofix some formatting with
 
 To install new packages, please use `lerna add` instead of `npm install`:
 
-    lerna add --scope '@citation-js/plugin-...' package-name
+    lerna add --scope '@afforai/citation-js-plugin-...' package-name
 
 ### Commits
 
@@ -62,17 +62,17 @@ New test go in the `test/` directories of the various packages in `packages/`. T
 
 If you want to test single packages, run
 
-    npm test -- --scope '@citation-js/plugin-...'
+    npm test -- --scope '@afforai/citation-js-plugin-...'
 
 If you want to run single test cases, run
 
-    npm test -- --scope '@citation-js/plugin-...' -- --grep 'pattern'
+    npm test -- --scope '@afforai/citation-js-plugin-...' -- --grep 'pattern'
 
-`@citation-js/cli` depends on all the plugins, and the plugins all depend on `@citation-js/core`. To test changes in `@citation-js` dependencies on different packages, first run
+`@afforai/citation-js-cli` depends on all the plugins, and the plugins all depend on `@afforai/citation-js-core`. To test changes in `@citation-js` dependencies on different packages, first run
 
     npm run babel
 
-Examples of this are when you made changes to `@citation-js/core`s `util.fetchFile` function and you want to see if the DOI plugin still works, or if you added shortDOIs to the DOI plugin and want to check if the CLI still recognizes it properly.
+Examples of this are when you made changes to `@afforai/citation-js-core`s `util.fetchFile` function and you want to see if the DOI plugin still works, or if you added shortDOIs to the DOI plugin and want to check if the CLI still recognizes it properly.
 
 The tests for Wikidata and DOIs use cached data, to save time and take it easier on their APIs. If you want to bypass the caches for Wikidata and DOIs, run
 

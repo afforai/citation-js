@@ -1,4 +1,4 @@
-import { plugins, util } from '@citation-js/core'
+import { plugins, util } from '@afforai/citation-js-core'
 
 plugins.add('@url', {
   input: {

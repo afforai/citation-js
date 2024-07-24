@@ -1,15 +1,15 @@
-# @citation-js/cli
+# @afforai/citation-js-cli
 CLI for Citation.js.
 
-[![NPM version](https://img.shields.io/npm/v/@citation-js/cli.svg)](https://npmjs.org/package/@citation-js/cli)
-[![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/cli.svg)](https://npmcharts.com/compare/@citation-js%2Fcli?minimal=true)
-![License](https://img.shields.io/npm/l/@citation-js/cli.svg)
-![Dependency status](https://img.shields.io/librariesio/release/npm/@citation-js/cli)
+[![NPM version](https://img.shields.io/npm/v/@afforai/citation-js-cli.svg)](https://npmjs.org/package/@afforai/citation-js-cli)
+[![NPM total downloads](https://img.shields.io/npm/dt/@afforai/citation-js-cli.svg)](https://npmcharts.com/compare/@citation-js%2Fcli?minimal=true)
+![License](https://img.shields.io/npm/l/@afforai/citation-js-cli.svg)
+![Dependency status](https://img.shields.io/librariesio/release/npm/@afforai/citation-js-cli)
 ---
 
 ## Install
 
-    npm install --global @citation-js/cli
+    npm install --global @afforai/citation-js-cli
 
 ## Usage
 
@@ -32,7 +32,7 @@ CLI for Citation.js.
 
       --log-level <level>                Log level: silent, error, warn, info, debug, http (default: "warn")
 
-      --plugins <names>                  Plugin names (@citation-js/plugin-NAME); bibjson, bibtex, csl, doi, ris & wikidata are preloaded (default: [])
+      --plugins <names>                  Plugin names (@afforai/citation-js-plugin-NAME); bibjson, bibtex, csl, doi, ris & wikidata are preloaded (default: [])
       --plugin-config <config>           @plugin.property.path=value;... (default: [])
       --formatter-options <config>       property.path=value;... (default: [])
 

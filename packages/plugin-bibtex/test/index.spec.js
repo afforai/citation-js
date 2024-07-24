@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const assert = require('assert')
 require('../src/index.js')
-const { plugins } = require('@citation-js/core')
+const { plugins } = require('@afforai/citation-js-core')
 const config = plugins.config.get('@bibtex')
 
 const inputData = require('./input.json')

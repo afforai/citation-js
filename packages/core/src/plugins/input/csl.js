@@ -13,7 +13,7 @@ const TYPE = 4
  *
  * @access private
  * @constant entryTypes
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  */
 const entryTypes = {
   // Valid types
@@ -85,7 +85,7 @@ const entryTypes = {
  *
  * @access private
  * @constant fieldTypes
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  */
 const fieldTypes = {
   author: NAME_LIST,
@@ -202,7 +202,7 @@ const fieldTypes = {
  * Correct a name.
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
  * @param {*} name - name
  * @param {Boolean} bestGuessConversions - make some best guess conversions on type mismatch
@@ -230,7 +230,7 @@ function correctName (name, bestGuessConversions) {
  * Correct a name field.
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input
+ * @memberof module:@afforai/citation-js-core.plugins.input
  *
  * @param {*} nameList - name list
  * @param {Boolean} bestGuessConversions - make some best guess conversions on type mismatch
@@ -248,7 +248,7 @@ function correctNameList (nameList, bestGuessConversions) {
  * Correct date parts
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
  * @param {Array} dateParts
  * @param {Boolean} bestGuessConversions - make some best guess conversions on type mismatch
@@ -269,7 +269,7 @@ function correctDateParts (dateParts, bestGuessConversions) {
  * Correct a date field.
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
  * @param {*} date - date
  * @param {Boolean} bestGuessConversions - make some best guess conversions on type mismatch
@@ -309,7 +309,7 @@ function correctDate (date, bestGuessConversions) {
  * Correct a type field.
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
  * @param {String|*} type - type
  * @param {Boolean} bestGuessConversions - make some best guess conversions on type mismatch
@@ -341,7 +341,7 @@ function correctType (type, bestGuessConversions) {
  * Correct a field.
  *
  * @access private
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
  * @param {String} fieldName - field name
  * @param {*} value - value
@@ -384,12 +384,12 @@ function correctField (fieldName, value, bestGuessConversions) {
  *
  * @access protected
  * @method clean
- * @memberof module:@citation-js/core.plugins.input.util
+ * @memberof module:@afforai/citation-js-core.plugins.input.util
  *
- * @param {Array<module:@citation-js/core~CSL>} data - Array of CSL
+ * @param {Array<module:@afforai/citation-js-core~CSL>} data - Array of CSL
  * @param {Boolean} [bestGuessConversions=true] - make some best guess conversions on type mismatch
  *
- * @return {Array<module:@citation-js/core~CSL>} Array of clean CSL
+ * @return {Array<module:@afforai/citation-js-core~CSL>} Array of clean CSL
  */
 function parseCsl (data, bestGuessConversions = true) {
   return data.map(function (entry) {

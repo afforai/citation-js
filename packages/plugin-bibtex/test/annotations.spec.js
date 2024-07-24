@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const assert = require('assert')
-const { plugins } = require('@citation-js/core')
+const { plugins } = require('@afforai/citation-js-core')
 
 const { parse: parseFile } = require('../src/input/file.js')
 const { format: formatFile } = require('../src/output/bibtex.js')

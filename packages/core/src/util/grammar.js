@@ -1,19 +1,19 @@
 import { deepCopy } from './deepCopy.js'
 
 /**
- * @typedef module:@citation-js/core.util.Grammar~ruleName
+ * @typedef module:@afforai/citation-js-core.util.Grammar~ruleName
  * @type {String}
  */
 
 /**
- * @callback module:@citation-js/core.util.Grammar~rule
- * @this module:@citation-js/core.util.Grammar
+ * @callback module:@afforai/citation-js-core.util.Grammar~rule
+ * @this module:@afforai/citation-js-core.util.Grammar
  */
 
 /**
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  *
- * @param {Object<module:@citation-js/core.util.Grammar~ruleName,module:@citation-js/core.util.Grammar~rule>} rules
+ * @param {Object<module:@afforai/citation-js-core.util.Grammar~ruleName,module:@afforai/citation-js-core.util.Grammar~rule>} rules
  * @param {Object} state
  */
 class Grammar {

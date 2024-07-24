@@ -1,5 +1,5 @@
 /**
- * @memberof module:@citation-js/core.util
+ * @memberof module:@afforai/citation-js-core.util
  * @param {Object} [data={}] - initial values
  */
 class Register {

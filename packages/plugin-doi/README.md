@@ -1,22 +1,22 @@
-# @citation-js/plugin-doi
+# @afforai/citation-js-plugin-doi
 Plugin for DOI input for Citation.js.
 
-[![NPM version](https://img.shields.io/npm/v/@citation-js/plugin-doi.svg)](https://npmjs.org/package/@citation-js/plugin-doi)
-[![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/plugin-doi.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-doi?minimal=true)
-![License](https://img.shields.io/npm/l/@citation-js/plugin-doi.svg)
-![Dependency status](https://img.shields.io/librariesio/release/npm/@citation-js/plugin-doi)
+[![NPM version](https://img.shields.io/npm/v/@afforai/citation-js-plugin-doi.svg)](https://npmjs.org/package/@afforai/citation-js-plugin-doi)
+[![NPM total downloads](https://img.shields.io/npm/dt/@afforai/citation-js-plugin-doi.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-doi?minimal=true)
+![License](https://img.shields.io/npm/l/@afforai/citation-js-plugin-doi.svg)
+![Dependency status](https://img.shields.io/librariesio/release/npm/@afforai/citation-js-plugin-doi)
 ---
 
 ## Install
 
-    npm install @citation-js/plugin-doi
+    npm install @afforai/citation-js-plugin-doi
 
 ## Usage
 
 Register by importing the package:
 
 ```js
-require('@citation-js/plugin-doi')
+require('@afforai/citation-js-plugin-doi')
 ```
 
 ## Formats

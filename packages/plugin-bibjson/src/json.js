@@ -143,7 +143,7 @@ function generalProps (input) {
  * Parse ContentMine quickscrape data
  *
  * @access protected
- * @memberof module:@citation-js/plugin-bibjson.parsers.json
+ * @memberof module:@afforai/citation-js-plugin-bibjson.parsers.json
  * @param {Object} data - The input data
  * @return {Array<CSL>} The formatted input data
  */
@@ -155,7 +155,7 @@ const parseContentMine = function (data) {
  * Parse BibJSON data
  *
  * @access protected
- * @memberof module:@citation-js/plugin-bibjson.parsers.json
+ * @memberof module:@afforai/citation-js-plugin-bibjson.parsers.json
  * @param {Object} data - The input data
  * @return {Array<CSL>} The formatted input data
  */

@@ -1,4 +1,4 @@
-import { logger } from '@citation-js/core'
+import { logger } from '@afforai/citation-js-core'
 import { parse as parseNameString } from '@citation-js/name'
 import { parse as parseDate } from '@citation-js/date'
 
@@ -8,13 +8,13 @@ import config from './config.json'
  * CSL mappings for Wikidata instances.
  * @access private
  * @constant types
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  */
 import types from './types.json'
 
 /**
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Object} claim - author claim
  * @return {String|null} name
  */
@@ -44,7 +44,7 @@ function getNameString ({ value, qualifiers }) {
  * Get a single name
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Object} claim - name claim
  * @return {Object} Name object
  */
@@ -72,7 +72,7 @@ function parseName (claim) {
  * Get names
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Array<Object>} values
  * @return {Array<Object>} Array with name objects
  */
@@ -86,7 +86,7 @@ function parseNames (values) {
  * Get place name from (publisher) entity.
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Object} value
  * @return {String} Place name + country
  */
@@ -101,7 +101,7 @@ function getPlace (value) {
  * Get title either from explicit statement or from label.
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Object} value
  * @return {String} Title
  */
@@ -115,7 +115,7 @@ function getTitle (value) {
  * Turn array of entities into comma-separated list of labels.
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Array<Object>} values
  * @return {String} Labels
  */
@@ -129,7 +129,7 @@ function parseKeywords (values) {
  * Get date parts from multiple statements.
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Array<Object>} values
  * @return {Array<Array<Number>>} Array of date-parts
  */
@@ -146,7 +146,7 @@ function parseDateRange (dates) {
  * Get version information.
  *
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Array<Object>} values
  * @return {Array<Array<Number>>} Array of date-parts
  */
@@ -221,7 +221,7 @@ export const TYPE_PRIORITIES = {
  *
  * @access protected
  * @method parse
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  *
  * @param {String} prop
  * @param {Array|String} values
@@ -298,7 +298,7 @@ export function parseProp (prop, value, entity) {
 
 /**
  * @access protected
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {String|Array<String>} type - P31 Wikidata ID value
  * @return {String} CSL type
  */
@@ -320,7 +320,7 @@ export function parseType (type) {
  * Get the labels of objects
  *
  * @access protected
- * @memberof module:@citation-js/plugin-wikidata.parsers.prop
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.prop
  * @param {Object} entity - Wikidata API response
  * @return {String} label
  */

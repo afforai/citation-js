@@ -2,7 +2,7 @@
 
 const assert = require('assert')
 require('../src/index.js')
-const { plugins } = require('@citation-js/core')
+const { plugins } = require('@afforai/citation-js-core')
 
 const type = '@else/url'
 const input = 'https://example.org/'

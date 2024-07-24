@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const assert = require('assert')
-const { plugins } = require('../../../test/api.js')(require('@citation-js/core'))
+const { plugins } = require('../../../test/api.js')(require('@afforai/citation-js-core'))
 require('../src/index.js')
 
 const data = require('./data.js')

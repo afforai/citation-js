@@ -1,5 +1,5 @@
 /**
- * @module module:@citation-js/core
+ * @module module:@afforai/citation-js-core
  */
 
 import Cite from './Cite/index.js'
@@ -8,7 +8,7 @@ import * as util from './util/index.js'
 import logger from './logger.js'
 
 /**
- * @memberof module:@citation-js/core
+ * @memberof module:@afforai/citation-js-core
  * @var {String} version - version number
  */
 import pkg from '../package.json'

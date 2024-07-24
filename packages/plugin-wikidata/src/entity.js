@@ -1,4 +1,4 @@
-import { logger } from '@citation-js/core'
+import { logger } from '@afforai/citation-js-core'
 import * as response from './response.js'
 import { parseProp, getLabel } from './prop.js'
 import props from './props.json'
@@ -7,7 +7,7 @@ import ignoredProps from './ignoredProps.json'
 
 /**
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.entity
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.entity
  * @param {Array<String>} parts - nested Wikidata properties
  * @param {Object} entity
  * @return {Object} statement
@@ -35,7 +35,7 @@ function resolve (parts, { claims }) {
 
 /**
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.entity
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.entity
  * @param {String} prop_ - Chain of nested Wikidata properties
  * @param {Object} entity
  * @param {Set} unknown
@@ -50,11 +50,11 @@ function resolveProp (prop_, entity, unknown) {
 
 /**
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.entity
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.entity
  * @param {Object|String} statement
  * @param {Object} entity
  * @param {Set} unknown
- * @return {module:@citation-js/core~CSL}
+ * @return {module:@afforai/citation-js-core~CSL}
  */
 function prepareValue (statement, entity, unknown) {
   if (typeof statement !== 'object') {
@@ -76,9 +76,9 @@ function prepareValue (statement, entity, unknown) {
 
 /**
  * @access private
- * @memberof module:@citation-js/plugin-wikidata.parsers.entity
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.entity
  * @param {Object} entity - The input data
- * @return {module:@citation-js/core~CSL} The formatted input data
+ * @return {module:@afforai/citation-js-core~CSL} The formatted input data
  */
 export function parseEntity (entity) {
   const data = {
@@ -163,9 +163,9 @@ export function parseEntity (entity) {
  *
  * @access protected
  * @method parseAsync
- * @memberof module:@citation-js/plugin-wikidata.parsers.entity
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.entity
  * @param {Object} data - The input data
- * @return {Promise<Array<module:@citation-js/core~CSL>>} The formatted input data
+ * @return {Promise<Array<module:@afforai/citation-js-core~CSL>>} The formatted input data
  */
 export async function parseEntitiesAsync ({ entities }) {
   return (await response.parseAsync(entities)).map(parseEntity)
@@ -176,9 +176,9 @@ export async function parseEntitiesAsync ({ entities }) {
  *
  * @access protected
  * @method parse
- * @memberof module:@citation-js/plugin-wikidata.parsers.entity
+ * @memberof module:@afforai/citation-js-plugin-wikidata.parsers.entity
  * @param {Object} data - The input data
- * @return {Array<module:@citation-js/core~CSL>} The formatted input data
+ * @return {Array<module:@afforai/citation-js-core~CSL>} The formatted input data
  */
 export function parseEntities ({ entities }) {
   return response.parse(entities).map(parseEntity)

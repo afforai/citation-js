@@ -11,11 +11,11 @@ Read the paper [*Citation.js: a format-independent, modular bibliography tool fo
 
 ---
 
-[![NPM version](https://img.shields.io/npm/v/@citation-js/core.svg)](https://npmjs.org/package/@citation-js/core)
-[![NPM yearly downloads](https://img.shields.io/npm/dy/@citation-js/core.svg)](https://npmcharts.com/compare/@citation-js%2Fcore?minimal=true)
+[![NPM version](https://img.shields.io/npm/v/@afforai/citation-js-core.svg)](https://npmjs.org/package/@afforai/citation-js-core)
+[![NPM yearly downloads](https://img.shields.io/npm/dy/@afforai/citation-js-core.svg)](https://npmcharts.com/compare/@citation-js%2Fcore?minimal=true)
 [![jsDelivr yearly hits](https://img.shields.io/jsdelivr/npm/hy/citation-js)](https://www.jsdelivr.com/package/npm/citation-js?tab=stats)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/citation-js/citation-js/build.yml?branch=main)](https://github.com/citation-js/citation-js/actions?query=workflow%3Abuild)
-![License](https://img.shields.io/npm/l/@citation-js/core.svg)
+![License](https://img.shields.io/npm/l/@afforai/citation-js-core.svg)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Join the chat at https://gitter.im/citation-js/Lobby](https://badges.gitter.im/citation-js/Lobby.svg)](https://gitter.im/citation-js/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.1005176.svg)](https://doi.org/10.5281/zenodo.1005176)
@@ -24,7 +24,7 @@ Read the paper [*Citation.js: a format-independent, modular bibliography tool fo
 
 | [citation-js/citation-js](https://github.com/citation-js/citation-js) | replaces | [larsgw/citation.js](https://github.com/larsgw/citation.js) |
 |---|---|---|
-| This repository contains the npm package `@citation-js/core` and several other components. || This repository contains the npm package `citation-js` that wraps the aforementioned components for backwards compatibility. |
+| This repository contains the npm package `@afforai/citation-js-core` and several other components. || This repository contains the npm package `citation-js` that wraps the aforementioned components for backwards compatibility. |
 
 ## Core
 
