@@ -94,7 +94,6 @@ export const MONTHS = {
   february: 2,
   march: 3,
   april: 4,
-  may: 5, /* eslint-disable-line no-dupe-keys */
   june: 6,
   july: 7,
   august: 8,
