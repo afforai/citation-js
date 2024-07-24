@@ -1,6 +1,6 @@
 {
   "name": "@afforai/citation-js-cli",
-  "version": "0.7.17",
+  "version": "0.7.18",
   "description": "CLI for Citation.js",
   "keywords": [
     "citation-js",
@@ -36,13 +36,13 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@afforai/citation-js-core": "^0.7.16",
-    "@afforai/citation-js-plugin-bibjson": "^0.7.16",
-    "@afforai/citation-js-plugin-bibtex": "^0.7.16",
-    "@afforai/citation-js-plugin-csl": "^0.7.16",
-    "@afforai/citation-js-plugin-doi": "^0.7.16",
-    "@afforai/citation-js-plugin-ris": "^0.7.16",
-    "@afforai/citation-js-plugin-wikidata": "^0.7.16",
+    "@afforai/citation-js-core": "^0.7.18",
+    "@afforai/citation-js-plugin-bibjson": "^0.7.18",
+    "@afforai/citation-js-plugin-bibtex": "^0.7.18",
+    "@afforai/citation-js-plugin-csl": "^0.7.18",
+    "@afforai/citation-js-plugin-doi": "^0.7.18",
+    "@afforai/citation-js-plugin-ris": "^0.7.18",
+    "@afforai/citation-js-plugin-wikidata": "^0.7.18",
     "commander": "^11.0.0"
   },
   "publishConfig": {
