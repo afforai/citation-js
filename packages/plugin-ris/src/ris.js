@@ -75,6 +75,11 @@ export function parse (text) {
         entries.push(lastEntry)
         // fall through
       default:
+        // NOTE: for some reason the user give an RIS file with entries that are missing types
+        if (lastEntry === undefined) {
+          lastEntry = { TY: 'JOUR' }
+          entries.push(lastEntry)
+        }
         if (Array.isArray(lastEntry[tag])) {
           lastEntry[tag].push(value)
         } else {
