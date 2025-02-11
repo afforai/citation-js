@@ -1,4 +1,61 @@
-# [](https://github.com/afforai/citation-js/compare/v0.7.17...v) (2024-07-24)
+# [](https://github.com/afforai/citation-js/compare/v0.7.18...v) (2025-02-11)
+
+
+### Bug Fixes
+
+* **cff:** date output for missing day/month ([1dc681e](https://github.com/afforai/citation-js/commit/1dc681e7fd2bc230a216679bb3b3ce9e787c3bb5))
+* **cff:** do not rely on end of page range to exist ([4550df5](https://github.com/afforai/citation-js/commit/4550df5bcd11aaf60560c9a696927fc0dc3dc254))
+* **cff:** drop timestamp of dates in YAML ([e00d3cc](https://github.com/afforai/citation-js/commit/e00d3cc6a9669238997603ec2039e1ecee789a25))
+* **cff:** fix new converter ([0e858b9](https://github.com/afforai/citation-js/commit/0e858b9f57b5729e4a55f258cab50af62b1c1e0a))
+* **cff:** handle string date values ([fe87581](https://github.com/afforai/citation-js/commit/fe875811c3e870129c0cd59b8c4a0a59322d65cc))
+* escape dots in predicate patterns ([eaf1b4e](https://github.com/afforai/citation-js/commit/eaf1b4e5b754e8e6b03ef36465e12298dfd00990)), closes [#12](https://github.com/afforai/citation-js/issues/12)
+* **gh:** fix version extractor for tag-less repos ([b777b72](https://github.com/afforai/citation-js/commit/b777b7294aad4f9ef482746c87ad413faa708cc0))
+* **google:** do not include empty page counts ([80d2846](https://github.com/afforai/citation-js/commit/80d284675924b645fe2e8a49032c6e90b3d21d56))
+* **google:** fix undefined language handling ([bc15475](https://github.com/afforai/citation-js/commit/bc15475c25608f4f6e7f51d9c1e30b471a9e6e9e))
+* **isbn:** add back sync support ([1503395](https://github.com/afforai/citation-js/commit/1503395a88f847903c5841f6db5afa80514025aa))
+* **npm:** fix npm plugin name -> [@npm](https://github.com/npm) ([ab5cdf2](https://github.com/afforai/citation-js/commit/ab5cdf28fd1b79f41f4a6ed75191a55ae3e41bb3))
+* **ol:** fix case with missing keyword props ([165b29d](https://github.com/afforai/citation-js/commit/165b29d367baed6e8397d4cec8fd4a802195f1f0))
+* **ris:** account for RIS entries without TY ([00e482e](https://github.com/afforai/citation-js/commit/00e482ee2eba12fd6528c5ec6fbe2d3de33e9ed1))
+
+
+### chore
+
+* replace yamljs with js-yaml ([b30bae9](https://github.com/afforai/citation-js/commit/b30bae9498725364859cb084fa50492b337c26f0))
+
+
+* chore!: raise minimal Node.js version ([6d8c61d](https://github.com/afforai/citation-js/commit/6d8c61df2632162cf35b50ee3f8a54f92c0777e4))
+* chore!: drop Node 6 support ([64ab91e](https://github.com/afforai/citation-js/commit/64ab91eb92f90618ff4907744ce350aa4915c8f9))
+* chore!: remove browser build ([018e338](https://github.com/afforai/citation-js/commit/018e3382373a45f989abf750e7b5e43ed119f42e))
+* chore!: drop Node 8 support ([1bb9d64](https://github.com/afforai/citation-js/commit/1bb9d6413f3065c69e4425f33fcc59c21a78b28c))
+
+
+### Features
+
+* **cff:** update to CFF 1.1.0 ([c677553](https://github.com/afforai/citation-js/commit/c6775534e68ef2976abab31956e892eda6f4a9a4))
+* **cff:** update to CFF v1.2.0 ([e600b00](https://github.com/afforai/citation-js/commit/e600b00a8faa7ce2542c826757febcc0f72ce51e))
+* **gh:** add version number ([33b9b3c](https://github.com/afforai/citation-js/commit/33b9b3c782b16a5245b6fb3cd2723d7740a466a3))
+* **gh:** make GitHub token writeable only ([a4a03c2](https://github.com/afforai/citation-js/commit/a4a03c2fbaaa9c9d915e2aec28187cbeb14cd63f))
+* **google:** support Google Books API ([9788cf7](https://github.com/afforai/citation-js/commit/9788cf79337334f2705abcbea22c7a0fe55a0c43))
+* **isbn:** support any hyphens ([4e3f995](https://github.com/afforai/citation-js/commit/4e3f995f95c966c5e4b5386c95b8eca08eafc9d3))
+* **ol:** support Open Library Books API ([98aaa45](https://github.com/afforai/citation-js/commit/98aaa457f247595b41645d6fc0c649a26be77035))
+* update mappings to CSL v1.0.2 ([e4568b2](https://github.com/afforai/citation-js/commit/e4568b2f0e140ec5050f826b218ef0f0b950b16f))
+* **zenodo:** support .zenodo.json ([1f7bced](https://github.com/afforai/citation-js/commit/1f7bced91097c5697c6285fd845f030ddb9d7e2c))
+
+
+### BREAKING CHANGES
+
+* Use Node.js 14 or higher
+* YAML output may look different
+* **gh:** set the GitHub OAuth token with
+Cite.plugins.config.get('@github').setApiToken(OAUTH_TOKEN)
+instead.
+* drop Node 6 support
+* no browser build
+* Node 8 support dropped. Upgrade to Node 10 or higher
+
+
+
+## [0.7.18](https://github.com/afforai/citation-js/compare/v0.7.17...v0.7.18) (2024-07-24)
 
 
 
